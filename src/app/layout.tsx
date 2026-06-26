@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   title: "Shoptype — The marketplace platform for the agentic economy",
   description:
     "Launch a full, multi-seller marketplace from your audience — no inventory, no fulfillment, no capital risk. Built natively for AI agents to browse, recommend, and transact.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({

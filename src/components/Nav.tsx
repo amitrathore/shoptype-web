@@ -1,11 +1,18 @@
+import Image from "next/image";
+
 export default function Nav() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 border-b border-line bg-canvas/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
-        <a href="#top" className="flex items-center gap-2">
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="absolute inline-flex h-full w-full animate-pulse-dot rounded-full bg-lime" />
-          </span>
+        <a href="#top" className="flex items-center gap-2.5">
+          <Image
+            src="/logo.png"
+            alt="Shoptype"
+            width={28}
+            height={28}
+            className="h-7 w-7"
+            priority
+          />
           <span className="font-display text-xl tracking-tight text-cream">
             Shoptype
           </span>

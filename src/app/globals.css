@@ -5,8 +5,8 @@
   --canvas-raised: #111114;
   --cream: #f4eee2;
   --cream-dim: #b9b2a4;
-  --lime: #d7ff3f;
-  --lime-dim: #9aab3f;
+  --lime: #ffd700;
+  --lime-dim: #cfae3f;
   --coral: #ff6a4a;
   --violet: #8b7bff;
   --line: rgba(244, 238, 226, 0.12);
@@ -69,7 +69,7 @@ body::before {
 }
 
 .text-glow-lime {
-  text-shadow: 0 0 40px rgba(215, 255, 63, 0.35);
+  text-shadow: 0 0 40px rgba(255, 215, 0, 0.35);
 }
 
 .bg-grid {
