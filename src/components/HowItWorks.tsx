@@ -29,7 +29,7 @@ export default function HowItWorks() {
           How it works
         </p>
         <h2 className="mt-4 max-w-xl font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
-          From audience to marketplace, in four moves.
+          From audience to marketplace to coseller networks, in four moves.
         </h2>
 
         <div className="relative mt-16 grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-6">
