@@ -22,7 +22,7 @@ export default function WhoItsFor() {
           Who it&rsquo;s for
         </p>
         <h2 className="mt-4 max-w-xl font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
-          Built for the people skipping a generation of retail.
+          Built to skip the old generation of retail.
         </h2>
 
         <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-3">
