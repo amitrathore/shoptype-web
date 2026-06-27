@@ -20,11 +20,15 @@ const hanken = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Shoptype — The marketplace platform for the agentic economy",
+  title: "Shoptype — The agentic market platform for the agentic economy",
   description:
-    "Launch a full, multi-seller marketplace from your audience — no inventory, no fulfillment, no capital risk. Built natively for AI agents to browse, recommend, and transact.",
+    "Launch a full, multi-seller agentic market from your audience — no inventory, no fulfillment, no capital risk. Built natively for AI agents to browse, recommend, and transact.",
   icons: {
-    icon: "/logo.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 

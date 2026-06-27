@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 3000
+    },
+    {
+      "name": "coa-web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "/Users/amit/workspace/shoptype/commerceofagents-web", "--", "-p", "3010"],
+      "port": 3010
     }
   ]
 }
