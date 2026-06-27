@@ -36,9 +36,9 @@ export default function Leapfrog() {
               For people who don&rsquo;t sell things — yet
             </p>
             <h2 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
-              You don&rsquo;t need an audience.
+              You don&rsquo;t need capital to grow.
               <br />
-              You need a market.
+              You need an agentic market.
             </h2>
             <p className="mt-6 max-w-md font-body text-base leading-relaxed text-cream-dim">
               Shoptype doesn&rsquo;t ask you to become a retailer — it lets
