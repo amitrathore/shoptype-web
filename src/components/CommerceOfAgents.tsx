@@ -17,14 +17,15 @@ export default function CommerceOfAgents() {
               Partner-driven growth, built in
             </p>
             <h2 className="mt-4 max-w-xl font-display text-3xl leading-[1.1] tracking-tight text-cream md:text-4xl">
-              Every distribution network runs on{" "}
+              Every Shoptype network leverages the{" "}
               <span className="text-lime">Commerce of Agents</span>{" "}
-              underneath.
+              protocol.
             </h2>
           </div>
           <p className="max-w-sm font-body text-[15px] leading-relaxed text-cream-dim">
-            The partner economy is already built in. You don&rsquo;t set
-            this up. It&rsquo;s just how Shoptype works.
+            Every seller, coseller, and referrer earns automatically —
+            you don&rsquo;t configure any of it. It&rsquo;s just how
+            Shoptype works.
           </p>
         </div>
       </div>

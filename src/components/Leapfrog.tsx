@@ -36,9 +36,9 @@ export default function Leapfrog() {
               Platformize your industry
             </p>
             <h2 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
-              You don&rsquo;t need to dominate your industry.
+              Don&rsquo;t compete in your industry.
               <br />
-              You need to platform it.
+              Become its platform.
             </h2>
             <p className="mt-6 max-w-md font-body text-base leading-relaxed text-cream-dim">
               Every industry has a business that becomes the platform
