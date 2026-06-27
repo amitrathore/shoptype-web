@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import FiveCs from "@/components/FiveCs";
 import Leapfrog from "@/components/Leapfrog";
 import AgenticFoundation from "@/components/AgenticFoundation";
 import CommerceOfAgents from "@/components/CommerceOfAgents";
@@ -14,6 +15,7 @@ export default function Home() {
       <Nav />
       <main className="flex-1">
         <Hero />
+        <FiveCs />
         <Leapfrog />
         <AgenticFoundation />
         <CommerceOfAgents />

@@ -19,6 +19,9 @@ export default function Nav() {
         </a>
 
         <nav className="hidden items-center gap-8 font-mono text-[13px] uppercase tracking-wider text-cream-dim md:flex">
+          <a href="#loop" className="transition-colors hover:text-cream">
+            The loop
+          </a>
           <a href="#leapfrog" className="transition-colors hover:text-cream">
             For sellers
           </a>
