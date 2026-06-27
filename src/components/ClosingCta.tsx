@@ -15,7 +15,7 @@ export default function ClosingCta() {
           You bring the audience.
           <br />
           <span className="text-lime text-glow-lime">
-            Shoptype brings the marketplace.
+            Shoptype brings the agentic market.
           </span>
         </h2>
         <p className="mx-auto mt-7 max-w-xl font-body text-base leading-relaxed text-cream-dim md:text-lg">
@@ -28,7 +28,7 @@ export default function ClosingCta() {
             href="#top"
             className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-lime px-8 py-4 font-mono text-sm font-medium uppercase tracking-wider text-canvas transition-transform hover:scale-[1.03]"
           >
-            Launch your marketplace today
+            Launch your agentic market today
             <span aria-hidden className="transition-transform group-hover:translate-x-1">
               &rarr;
             </span>

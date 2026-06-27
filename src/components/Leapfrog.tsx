@@ -2,7 +2,7 @@ const points = [
   {
     n: "01",
     title: "Recruit sellers into your ecosystem.",
-    body: "Their products become your marketplace's virtual inventory — you never buy or hold a single unit.",
+    body: "Their products become your agentic market's virtual inventory — you never buy or hold a single unit.",
   },
   {
     n: "02",
@@ -17,7 +17,7 @@ const points = [
   {
     n: "04",
     title: "Minimal support role.",
-    body: "Buyer and seller connect and transact directly through your marketplace; you're not the middleman managing every interaction.",
+    body: "Buyer and seller connect and transact directly through your agentic market; you're not the middleman managing every interaction.",
   },
   {
     n: "05",
@@ -42,12 +42,12 @@ export default function Leapfrog() {
             </h2>
             <p className="mt-6 max-w-md font-body text-base leading-relaxed text-cream-dim">
               Shoptype doesn&rsquo;t ask you to become a retailer — it lets
-              you become the marketplace.
+              you become the agentic market.
             </p>
             <p className="mt-8 max-w-md font-body text-base leading-relaxed text-cream-dim">
               This is the leapfrog: an influencer, a creator, a community,
               or a media company with zero commerce infrastructure today
-              can be running a real, multi-seller marketplace tomorrow —
+              can be running a real, multi-seller agentic market tomorrow —
               outcompeting businesses still trying to build the old way,
               with none of the balance-sheet risk and none of the
               operational weight.

@@ -17,7 +17,7 @@ export default function CommerceOfAgents() {
               And it gets better from there
             </p>
             <h2 className="mt-4 max-w-xl font-display text-3xl leading-[1.1] tracking-tight text-cream md:text-4xl">
-              Every marketplace runs on{" "}
+              Every agentic market runs on{" "}
               <span className="text-lime">Commerce of Agents</span>{" "}
               underneath.
             </h2>

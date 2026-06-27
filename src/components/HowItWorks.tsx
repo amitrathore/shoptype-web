@@ -2,12 +2,12 @@ const steps = [
   {
     n: "01",
     title: "Launch.",
-    body: "Tell Shoptype who you are and what kind of marketplace you're building. Live in minutes — already speaking the protocol AI agents transact on.",
+    body: "Tell Shoptype who you are and what kind of agentic market you're building. Live in minutes — already speaking the protocol AI agents transact on.",
   },
   {
     n: "02",
     title: "Recruit sellers.",
-    body: "Bring in the sellers your audience already wants — their inventory becomes your marketplace's catalog, with no capital outlay.",
+    body: "Bring in the sellers your audience already wants — their inventory becomes your agentic market's catalog, with no capital outlay.",
   },
   {
     n: "03",
@@ -29,7 +29,7 @@ export default function HowItWorks() {
           How it works
         </p>
         <h2 className="mt-4 max-w-xl font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
-          From audience to marketplace to coseller networks, in four moves.
+          From audience to agentic market to coseller networks, in four moves.
         </h2>
 
         <div className="relative mt-16 grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-6">

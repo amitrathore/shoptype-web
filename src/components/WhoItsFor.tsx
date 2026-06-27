@@ -10,7 +10,7 @@ const audiences = [
   {
     tag: "Any business, no storefront",
     title:
-      "Leapfrog straight to an AI-ready marketplace instead of building a storefront that needs rebuilding in two years.",
+      "Leapfrog straight to an AI-ready agentic market instead of building a storefront that needs rebuilding in two years.",
   },
 ];
 

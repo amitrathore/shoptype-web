@@ -80,18 +80,20 @@ export default function Hero() {
           </div>
 
           <h1 className="font-display text-[13vw] leading-[0.98] tracking-tight text-cream md:text-[clamp(2.6rem,5.4vw,5.2rem)]">
-            Go beyond stores to{" "}
-            <span className="text-glow-lime text-lime">agentic commerce</span>
+            Agentic Commerce
+            <br />
+            <span className="text-glow-lime text-lime">for the Age of AI</span>
             <span className="text-cream-dim">.</span>
           </h1>
 
           <p className="mt-7 max-w-xl font-body text-lg leading-relaxed text-cream-dim md:text-xl">
             <strong className="font-semibold text-cream">Shoptype</strong>{" "}
             lets anyone with an audience — influencers, creators,
-            communities, media companies — launch a full agentic
-            marketplace, instantly. No inventory. No fulfillment. No
-            capital risk. And it&rsquo;s already built for AI agents to
-            shop, recommend, and transact on it — not just people.
+            communities, media companies — launch a full agentic market,
+            instantly. Grow your business through an ecosystem of sellers,
+            cosellers, and AI agents — entirely virtual, with no inventory,
+            no fulfillment, and no capital risk. It&rsquo;s commerce built
+            for people and AI agents to trade together.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">
@@ -99,7 +101,7 @@ export default function Hero() {
               href="#launch"
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-lime px-7 py-3.5 font-mono text-[13px] font-medium uppercase tracking-wider text-canvas transition-transform hover:scale-[1.03]"
             >
-              Launch your marketplace
+              Launch your agentic market
               <span aria-hidden className="transition-transform group-hover:translate-x-1">
                 &rarr;
               </span>

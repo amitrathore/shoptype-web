@@ -1,13 +1,13 @@
 const items = [
   {
     label: "Visible to agents",
-    title: "Your marketplace is visible to AI shopping agents, not just search engines.",
-    body: "As buyers increasingly delegate research and purchasing to AI assistants, a marketplace those agents can actually transact with captures demand the old web can't.",
+    title: "Your agentic market is visible to AI shopping agents, not just search engines.",
+    body: "As buyers increasingly delegate research and purchasing to AI assistants, an agentic market those agents can actually transact with captures demand the old web can't.",
   },
   {
     label: "Inherited, not configured",
     title: "Your sellers don't need to do anything differently.",
-    body: "Agentic readiness is a property of the marketplace itself — every seller you recruit inherits it automatically.",
+    body: "Agentic readiness is a property of the agentic market itself — every seller you recruit inherits it automatically.",
   },
   {
     label: "Early, on purpose",
@@ -52,7 +52,7 @@ export default function AgenticFoundation() {
             </span>
           </p>
           <p className="mt-3 font-body text-sm text-cream-dim md:text-base">
-            Every marketplace launched on Shoptype speaks the protocol AI
+            Every agentic market launched on Shoptype speaks the protocol AI
             agents already use to browse, evaluate, and buy — from day
             one, no separate integration, no waiting on a platform update.
           </p>
