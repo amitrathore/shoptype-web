@@ -88,13 +88,10 @@ export default function Hero() {
 
           <p className="mt-7 max-w-xl font-body text-lg leading-relaxed text-cream-dim md:text-xl">
             <strong className="font-semibold text-cream">Shoptype</strong>{" "}
-            lets anyone launch a full agentic market, instantly — bring your
-            own audience, or invite the influencers, creators, and sellers
-            who already have one into your community to build and monetize
-            for themselves. Grow your business through an ecosystem of
-            sellers, cosellers, and AI agents — entirely virtual, with no
-            inventory, no fulfillment, and no capital risk. It&rsquo;s commerce built
-            for people and AI agents to trade together.
+            lets anyone launch a full agentic market, instantly. Bring your
+            own audience, or invite creators and sellers to build one with
+            you. No inventory, no fulfillment, no capital risk — just an
+            ecosystem of sellers, cosellers, and AI agents trading together.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">
