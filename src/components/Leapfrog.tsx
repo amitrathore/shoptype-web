@@ -36,21 +36,25 @@ export default function Leapfrog() {
               For people who don&rsquo;t sell things — yet
             </p>
             <h2 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
-              You have an audience.
+              You don&rsquo;t need an audience.
               <br />
-              You don&rsquo;t need a warehouse.
+              You need a market.
             </h2>
             <p className="mt-6 max-w-md font-body text-base leading-relaxed text-cream-dim">
               Shoptype doesn&rsquo;t ask you to become a retailer — it lets
-              you become the agentic market.
+              you become the agentic market. Already have followers? Bring
+              them in. Starting from zero? Launch the market first, then
+              invite the creators, influencers, and sellers who do have an
+              audience to build inside your community — and monetize for
+              themselves.
             </p>
             <p className="mt-8 max-w-md font-body text-base leading-relaxed text-cream-dim">
-              This is the leapfrog: an influencer, a creator, a community,
-              or a media company with zero commerce infrastructure today
-              can be running a real, multi-seller agentic market tomorrow —
-              outcompeting businesses still trying to build the old way,
-              with none of the balance-sheet risk and none of the
-              operational weight.
+              This is the leapfrog: anyone — an influencer, a creator, a
+              community, a media company, or someone starting with nothing
+              but an invitation list — can be running a real, multi-seller
+              agentic market tomorrow — outcompeting businesses still
+              trying to build the old way, with none of the balance-sheet
+              risk and none of the operational weight.
             </p>
           </div>
 

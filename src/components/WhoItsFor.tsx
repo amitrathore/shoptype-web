@@ -12,6 +12,11 @@ const audiences = [
     title:
       "Leapfrog straight to an AI-ready agentic market instead of building a storefront that needs rebuilding in two years.",
   },
+  {
+    tag: "Starting from zero",
+    title:
+      "No audience, no following, no niche? Launch the market first — then invite the creators and sellers who do have an audience to build inside it and monetize for themselves.",
+  },
 ];
 
 export default function WhoItsFor() {
@@ -25,7 +30,7 @@ export default function WhoItsFor() {
           Built to skip the old generation of retail.
         </h2>
 
-        <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-3">
+        <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
           {audiences.map((a) => (
             <div
               key={a.tag}
