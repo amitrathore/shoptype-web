@@ -23,10 +23,10 @@ export default function Nav() {
             The loop
           </a>
           <a href="#leapfrog" className="transition-colors hover:text-cream">
-            For sellers
+            Platformize
           </a>
           <a href="#agentic" className="transition-colors hover:text-cream">
-            Agentic-ready
+            The engine
           </a>
           <a href="#how" className="transition-colors hover:text-cream">
             How it works

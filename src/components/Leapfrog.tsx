@@ -2,7 +2,7 @@ const points = [
   {
     n: "01",
     title: "Recruit sellers into your ecosystem.",
-    body: "Their products become your agentic market's virtual inventory — you never buy or hold a single unit.",
+    body: "Their products become your platform's virtual inventory — you never buy or hold a single unit.",
   },
   {
     n: "02",
@@ -17,7 +17,7 @@ const points = [
   {
     n: "04",
     title: "Minimal support role.",
-    body: "Buyer and seller connect and transact directly through your agentic market; you're not the middleman managing every interaction.",
+    body: "Buyer and seller connect and transact directly through your platform; you're not the middleman managing every interaction.",
   },
   {
     n: "05",
@@ -33,28 +33,27 @@ export default function Leapfrog() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="font-mono text-[11px] uppercase tracking-wider text-coral">
-              For people who don&rsquo;t sell things — yet
+              Platformize your industry
             </p>
             <h2 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
-              You don&rsquo;t need capital to grow.
+              You don&rsquo;t need to dominate your industry.
               <br />
-              You need an agentic market.
+              You need to platform it.
             </h2>
             <p className="mt-6 max-w-md font-body text-base leading-relaxed text-cream-dim">
-              Shoptype doesn&rsquo;t ask you to become a retailer — it lets
-              you become the agentic market. Already have followers? Bring
-              them in. Starting from zero? Launch the market first, then
-              invite the creators, influencers, and sellers who do have an
-              audience to build inside your community — and monetize for
-              themselves.
+              Every industry has a business that becomes the platform
+              everyone else builds on — the one others plug into instead
+              of competing with. Shoptype lets you be that business.
+              Recruit the sellers, creators, and partners in your space
+              into your ecosystem, and become the hub of distribution for
+              your entire category.
             </p>
             <p className="mt-8 max-w-md font-body text-base leading-relaxed text-cream-dim">
-              This is the leapfrog: anyone — an influencer, a creator, a
-              community, a media company, or someone starting with nothing
-              but an invitation list — can be running a real, multi-seller
-              agentic market tomorrow — outcompeting businesses still
-              trying to build the old way, with none of the balance-sheet
-              risk and none of the operational weight.
+              This is the leapfrog: instead of out-competing every seller
+              in your industry, you out-platform them — turning rivals and
+              adjacent businesses into partners who distribute through
+              you, while you carry none of the balance-sheet risk and none
+              of the operational weight.
             </p>
           </div>
 

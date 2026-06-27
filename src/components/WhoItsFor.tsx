@@ -8,9 +8,9 @@ const audiences = [
     title: "You have the attention. Shoptype gives you the commerce layer.",
   },
   {
-    tag: "Any business, no storefront",
+    tag: "Any business, any industry",
     title:
-      "Leapfrog straight to an AI-ready agentic market instead of building a storefront that needs rebuilding in two years.",
+      "Don't just sell in your industry — become the platform it runs on, with distribution built in from day one.",
   },
   {
     tag: "Starting from zero",
@@ -27,7 +27,7 @@ export default function WhoItsFor() {
           Who it&rsquo;s for
         </p>
         <h2 className="mt-4 max-w-xl font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
-          Built to skip the old generation of retail.
+          Built for any business ready to become the platform for its industry.
         </h2>
 
         <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">

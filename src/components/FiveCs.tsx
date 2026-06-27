@@ -17,7 +17,7 @@ const cs = [
   {
     n: "04",
     name: "Cosellers",
-    body: "Buyers and creators share what they love, earning a cut of every sale they drive.",
+    body: "Human partners and AI agents share what they love, earning a cut of every sale they drive.",
   },
   {
     n: "05",
@@ -95,18 +95,18 @@ export default function FiveCs() {
         <div className="grid grid-cols-1 gap-14 md:grid-cols-[1fr_0.95fr] md:items-center">
           <div>
             <p className="font-mono text-[11px] uppercase tracking-wider text-coral">
-              The closed agentic loop
+              The distribution flywheel
             </p>
             <h2 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
               Five Cs. One loop that never stops.
             </h2>
             <p className="mt-6 max-w-md font-body text-base leading-relaxed text-cream-dim">
-              An agentic market doesn&rsquo;t run as a funnel — it runs as a
-              loop. Content draws a community in. Community turns into
-              commerce. Commerce pays cosellers for spreading the word.
-              Cosellers fuel campaigns. And campaigns produce the next
-              round of content — right, relevant, and personalized to
-              who&rsquo;s actually buying.
+              Growth doesn&rsquo;t come from ads — it comes from a loop.
+              Content draws a community in. Community becomes commerce.
+              Commerce pays cosellers — human and AI — for distributing
+              what you sell. Cosellers fuel campaigns. And campaigns
+              produce the next round of content, aimed at exactly
+              who&rsquo;s buying.
             </p>
           </div>
 

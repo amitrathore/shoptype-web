@@ -35,14 +35,14 @@ function NetworkDiagram() {
         </line>
       </g>
 
-      {/* center node: marketplace */}
+      {/* center node: business */}
       <circle cx="220" cy="220" r="34" fill="#0a0a0d" stroke="var(--lime)" strokeWidth="1.5" />
       <text x="220" y="216" textAnchor="middle" fontSize="9" fontFamily="var(--font-mono)" fill="var(--lime)">YOUR</text>
-      <text x="220" y="228" textAnchor="middle" fontSize="9" fontFamily="var(--font-mono)" fill="var(--lime)">MARKET</text>
+      <text x="220" y="228" textAnchor="middle" fontSize="9" fontFamily="var(--font-mono)" fill="var(--lime)">BUSINESS</text>
 
-      {/* seller nodes */}
+      {/* coseller node */}
       <circle cx="80" cy="90" r="20" fill="#0a0a0d" stroke="currentColor" strokeWidth="1.2" />
-      <text x="80" y="93" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--cream)">SELLER</text>
+      <text x="80" y="93" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--cream)">COSELLER</text>
 
       <circle cx="360" cy="90" r="20" fill="#0a0a0d" stroke="currentColor" strokeWidth="1.2" />
       <text x="360" y="93" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--cream)">SELLER</text>
@@ -76,11 +76,11 @@ export default function Hero() {
         <div className="animate-rise">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-line px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-wider text-cream-dim">
             <span className="h-1.5 w-1.5 rounded-full bg-lime" />
-            Built for the agentic economy
+            The distribution layer for any business
           </div>
 
           <h1 className="font-display text-[13vw] leading-[0.98] tracking-tight text-cream md:text-[clamp(2.6rem,5.4vw,5.2rem)]">
-            Agentic Commerce
+            Distribution
             <br />
             <span className="text-glow-lime text-lime">for the Age of AI</span>
             <span className="text-cream-dim">.</span>
@@ -88,10 +88,11 @@ export default function Hero() {
 
           <p className="mt-7 max-w-xl font-body text-lg leading-relaxed text-cream-dim md:text-xl">
             <strong className="font-semibold text-cream">Shoptype</strong>{" "}
-            lets anyone launch a full agentic market, instantly. Bring your
-            own audience, or invite creators and sellers to build one with
-            you. No inventory, no fulfillment, no capital risk — just an
-            ecosystem of sellers, cosellers, and AI agents trading together.
+            turns your business into a growth ecosystem — a network of
+            human cosellers and AI agents that find buyers, share products,
+            and drive sales on your behalf. The agentic market underneath
+            handles the transacting; distribution is what actually grows
+            you.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">
@@ -99,7 +100,7 @@ export default function Hero() {
               href="#launch"
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-lime px-7 py-3.5 font-mono text-[13px] font-medium uppercase tracking-wider text-canvas transition-transform hover:scale-[1.03]"
             >
-              Launch your agentic market
+              Build your distribution ecosystem
               <span aria-hidden className="transition-transform group-hover:translate-x-1">
                 &rarr;
               </span>
@@ -108,7 +109,7 @@ export default function Hero() {
               href="#agentic"
               className="font-mono text-[13px] uppercase tracking-wider text-cream-dim underline decoration-line decoration-1 underline-offset-4 transition-colors hover:text-cream hover:decoration-lime"
             >
-              See how agents shop here
+              See how the ecosystem grows
             </a>
           </div>
         </div>

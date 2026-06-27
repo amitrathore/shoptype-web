@@ -1,13 +1,13 @@
 const items = [
   {
     label: "Visible to agents",
-    title: "Your agentic market is visible to AI shopping agents, not just search engines.",
-    body: "As buyers increasingly delegate research and purchasing to AI assistants, an agentic market those agents can actually transact with captures demand the old web can't.",
+    title: "Your distribution reaches AI shopping agents, not just search engines.",
+    body: "As buyers increasingly delegate research and purchasing to AI assistants, a business those agents can actually transact with captures demand the old web can't.",
   },
   {
     label: "Inherited, not configured",
     title: "Your sellers don't need to do anything differently.",
-    body: "Agentic readiness is a property of the agentic market itself — every seller you recruit inherits it automatically.",
+    body: "Agentic readiness is a property of the platform itself — every seller you recruit inherits it automatically.",
   },
   {
     label: "Early, on purpose",
@@ -28,7 +28,7 @@ export default function AgenticFoundation() {
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-mono text-[11px] uppercase tracking-wider text-violet">
-            Why &ldquo;agentic-ready&rdquo; isn&rsquo;t a feature
+            The engine underneath your distribution
           </p>
           <h2 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
             It&rsquo;s the foundation.
@@ -77,7 +77,8 @@ export default function AgenticFoundation() {
         <p className="mx-auto mt-14 max-w-2xl text-center font-display text-2xl leading-snug text-cream md:text-3xl">
           Launching on Shoptype isn&rsquo;t just skipping the cost of
           building a store. It&rsquo;s skipping a generation of commerce
-          infrastructure that&rsquo;s already becoming obsolete.
+          infrastructure — and building the distribution network to
+          outgrow it.
         </p>
       </div>
     </section>

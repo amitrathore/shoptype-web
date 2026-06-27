@@ -14,16 +14,16 @@ export default function CommerceOfAgents() {
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div>
             <p className="font-mono text-[11px] uppercase tracking-wider text-coral">
-              And it gets better from there
+              Partner-driven growth, built in
             </p>
             <h2 className="mt-4 max-w-xl font-display text-3xl leading-[1.1] tracking-tight text-cream md:text-4xl">
-              Every agentic market runs on{" "}
+              Every distribution network runs on{" "}
               <span className="text-lime">Commerce of Agents</span>{" "}
               underneath.
             </h2>
           </div>
           <p className="max-w-sm font-body text-[15px] leading-relaxed text-cream-dim">
-            The referral economy is already built in. You don&rsquo;t set
+            The partner economy is already built in. You don&rsquo;t set
             this up. It&rsquo;s just how Shoptype works.
           </p>
         </div>
