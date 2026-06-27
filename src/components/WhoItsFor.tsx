@@ -10,7 +10,7 @@ const audiences = [
   {
     tag: "Any business, any industry",
     title:
-      "Don't just sell in your industry — become the platform it runs on, with distribution built in from day one.",
+      "Don't just sell in your industry — become the platform it runs on, with AI-ready distribution built in from day one.",
   },
   {
     tag: "Starting from zero",

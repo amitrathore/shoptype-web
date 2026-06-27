@@ -19,8 +19,8 @@ export default function ClosingCta() {
           </span>
         </h2>
         <p className="mx-auto mt-7 max-w-xl font-body text-base leading-relaxed text-cream-dim md:text-lg">
-          The growth engine underneath it, and a head start on an economy
-          that&rsquo;s already arriving.
+          The growth engine underneath it, and a head start on the agentic
+          economy that&rsquo;s already arriving.
         </p>
 
         <div className="mt-10 flex justify-center">

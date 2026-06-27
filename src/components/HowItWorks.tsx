@@ -7,7 +7,7 @@ const steps = [
   {
     n: "02",
     title: "Recruit partners.",
-    body: "Bring in the sellers, creators, and partners your industry already trusts — their inventory becomes your platform's catalog, with no capital outlay.",
+    body: "Bring in the sellers, creators, and partners your industry already trusts — their inventory becomes your agentic market's catalog, with no capital outlay.",
   },
   {
     n: "03",
@@ -29,7 +29,7 @@ export default function HowItWorks() {
           How it works
         </p>
         <h2 className="mt-4 max-w-xl font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
-          From business to platform to distribution network, in four moves.
+          From business to agentic market to distribution network, in four moves.
         </h2>
 
         <div className="relative mt-16 grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-6">

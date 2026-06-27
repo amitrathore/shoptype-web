@@ -2,7 +2,7 @@ const points = [
   {
     n: "01",
     title: "Recruit sellers into your ecosystem.",
-    body: "Their products become your platform's virtual inventory — you never buy or hold a single unit.",
+    body: "Their products become your agentic market's virtual inventory — you never buy or hold a single unit.",
   },
   {
     n: "02",
@@ -17,7 +17,7 @@ const points = [
   {
     n: "04",
     title: "Minimal support role.",
-    body: "Buyer and seller connect and transact directly through your platform; you're not the middleman managing every interaction.",
+    body: "Buyer and seller connect and transact directly through your agentic market; you're not the middleman managing every interaction.",
   },
   {
     n: "05",
@@ -45,8 +45,8 @@ export default function Leapfrog() {
               everyone else builds on — the one others plug into instead
               of competing with. Shoptype lets you be that business.
               Recruit the sellers, creators, and partners in your space
-              into your ecosystem, and become the hub of distribution for
-              your entire category.
+              into your ecosystem, and become the agentic market that's
+              the hub of distribution for your entire category.
             </p>
             <p className="mt-8 max-w-md font-body text-base leading-relaxed text-cream-dim">
               This is the leapfrog: instead of out-competing every seller
