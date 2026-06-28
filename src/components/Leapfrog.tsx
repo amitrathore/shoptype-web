@@ -45,7 +45,7 @@ export default function Leapfrog() {
               everyone else builds on — the one others plug into instead
               of competing with. Shoptype lets you be that business.
               Recruit the sellers, creators, and partners in your space
-              into your ecosystem, and become the agentic market that's
+              into your ecosystem, and become the agentic market that&rsquo;s
               the hub of distribution for your entire category.
             </p>
             <p className="mt-8 max-w-md font-body text-base leading-relaxed text-cream-dim">

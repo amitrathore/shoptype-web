@@ -19,16 +19,35 @@ const hanken = Hanken_Grotesk({
   subsets: ["latin"],
 });
 
+const title = "Shoptype — Growth for the Age of AI";
+const description =
+  "Shoptype turns any business into a growth ecosystem — a network of human cosellers and AI agents that find buyers, share products, and drive sales for you.";
+
 export const metadata: Metadata = {
-  title: "Shoptype — Growth for the Age of AI",
-  description:
-    "Shoptype turns any business into a growth ecosystem — a network of human cosellers and AI agents that find buyers, share products, and drive sales. The agentic market is the engine underneath; distribution is the point.",
+  metadataBase: new URL("https://shoptype.com"),
+  title,
+  description,
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
       { url: "/icon.png", type: "image/png", sizes: "32x32" },
     ],
     apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title,
+    description,
+    url: "https://shoptype.com",
+    siteName: "Shoptype",
+    type: "website",
+    locale: "en_US",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: title }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/og-image.png"],
   },
 };
 
