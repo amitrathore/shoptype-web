@@ -20,7 +20,7 @@ const hanken = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Shoptype — Distribution for the Age of AI",
+  title: "Shoptype — Growth for the Age of AI",
   description:
     "Shoptype turns any business into a growth ecosystem — a network of human cosellers and AI agents that find buyers, share products, and drive sales. The agentic market is the engine underneath; distribution is the point.",
   icons: {
