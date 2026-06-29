@@ -34,7 +34,7 @@ export default function AgenticFoundation() {
             It&rsquo;s the foundation.
           </h2>
           <p className="mt-6 font-body text-base leading-relaxed text-cream-dim md:text-lg">
-            Retail is in the middle of a handoff. Search is being replaced
+            Commerce is in the middle of a handoff. Search is being replaced
             by AI assistants that research and compare on a buyer&rsquo;s
             behalf. Checkout is being replaced by agents that complete the
             purchase without a human ever loading a page. This isn&rsquo;t
