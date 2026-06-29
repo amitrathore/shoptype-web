@@ -18,9 +18,9 @@ export default function Home() {
         <FiveCs />
         <Leapfrog />
         <AgenticFoundation />
-        <CommerceOfAgents />
         <HowItWorks />
         <WhoItsFor />
+        <CommerceOfAgents />
         <ClosingCta />
       </main>
       <Footer />

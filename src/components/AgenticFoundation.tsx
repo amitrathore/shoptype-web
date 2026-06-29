@@ -75,7 +75,7 @@ export default function AgenticFoundation() {
         </div>
 
         <p className="mx-auto mt-14 max-w-2xl text-center font-display text-2xl leading-snug text-cream md:text-3xl">
-          Launching on Shoptype isn&rsquo;t just skipping the cost of
+          Leveraging Shoptype isn&rsquo;t just skipping the cost of
           building a store. It&rsquo;s skipping a generation of commerce
           infrastructure — and building the distribution network to
           outgrow it.

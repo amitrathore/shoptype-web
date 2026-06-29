@@ -17,16 +17,26 @@ export default function CommerceOfAgents() {
               Partner-driven growth, built in
             </p>
             <h2 className="mt-4 max-w-xl font-display text-3xl leading-[1.1] tracking-tight text-cream md:text-4xl">
-              Every Shoptype network leverages the{" "}
-              <span className="text-lime">Commerce of Agents</span>{" "}
-              protocol.
+              Every Shoptype network leverages{" "}
+              <span className="text-lime">Commerce of Agents</span>.
             </h2>
           </div>
-          <p className="max-w-sm font-body text-[15px] leading-relaxed text-cream-dim">
-            Every seller, coseller, and referrer earns automatically —
-            you don&rsquo;t configure any of it. It&rsquo;s just how
-            Shoptype works.
-          </p>
+          <div className="max-w-sm">
+            <p className="font-body text-[15px] leading-relaxed text-cream-dim">
+              Every seller, coseller, and referrer earns automatically —
+              you don&rsquo;t configure any of it. It&rsquo;s just how
+              Shoptype works.
+            </p>
+            <a
+              href="https://commerceofagents.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 font-mono text-[13px] uppercase tracking-wider text-lime underline decoration-lime/40 decoration-1 underline-offset-4 transition-colors hover:decoration-lime"
+            >
+              Learn more and read the book
+              <span aria-hidden>&rarr;</span>
+            </a>
+          </div>
         </div>
       </div>
 

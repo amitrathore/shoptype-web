@@ -12,7 +12,7 @@ export default function ClosingCta() {
           The bottom line
         </p>
         <h2 className="mt-5 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-6xl">
-          You bring the business spark.
+          You bring the business vertical.
           <br />
           <span className="text-lime text-glow-lime">
             Shoptype brings agentic distribution.
