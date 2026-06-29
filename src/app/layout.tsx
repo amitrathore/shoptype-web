@@ -65,7 +65,7 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var s=localStorage.getItem("shoptype-theme");var t=s||((window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark");document.documentElement.dataset.theme=t;}catch(e){}})();`,
+            __html: `(function(){try{var s=localStorage.getItem("shoptype-theme");document.documentElement.dataset.theme=s==="light"?"light":"dark";}catch(e){}})();`,
           }}
         />
       </head>
