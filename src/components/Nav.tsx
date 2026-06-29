@@ -38,7 +38,7 @@ export default function Nav() {
 
         <a
           href="#launch"
-          className="group relative overflow-hidden rounded-full bg-lime px-5 py-2 font-mono text-[12px] font-medium uppercase tracking-wider text-canvas transition-transform hover:scale-[1.03]"
+          className="group relative overflow-hidden rounded-full bg-accent px-5 py-2 font-mono text-[12px] font-medium uppercase tracking-wider text-ink transition-transform hover:scale-[1.03]"
         >
           Launch
         </a>

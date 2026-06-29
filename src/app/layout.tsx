@@ -60,7 +60,15 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${fraunces.variable} ${plexMono.variable} ${hanken.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var s=localStorage.getItem("shoptype-theme");var t=s||((window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark");document.documentElement.dataset.theme=t;}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-canvas text-cream">
         {children}
       </body>

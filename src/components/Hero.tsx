@@ -36,27 +36,27 @@ function NetworkDiagram() {
       </g>
 
       {/* center node: business */}
-      <circle cx="220" cy="220" r="34" fill="#0a0a0d" stroke="var(--lime)" strokeWidth="1.5" />
+      <circle cx="220" cy="220" r="34" fill="var(--canvas)" stroke="var(--lime)" strokeWidth="1.5" />
       <text x="220" y="216" textAnchor="middle" fontSize="9" fontFamily="var(--font-mono)" fill="var(--lime)">YOUR</text>
       <text x="220" y="228" textAnchor="middle" fontSize="9" fontFamily="var(--font-mono)" fill="var(--lime)">BUSINESS</text>
 
       {/* coseller node */}
-      <circle cx="80" cy="90" r="20" fill="#0a0a0d" stroke="currentColor" strokeWidth="1.2" />
+      <circle cx="80" cy="90" r="20" fill="var(--canvas)" stroke="currentColor" strokeWidth="1.2" />
       <text x="80" y="93" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--cream)">COSELLER</text>
 
-      <circle cx="360" cy="90" r="20" fill="#0a0a0d" stroke="currentColor" strokeWidth="1.2" />
+      <circle cx="360" cy="90" r="20" fill="var(--canvas)" stroke="currentColor" strokeWidth="1.2" />
       <text x="360" y="93" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--cream)">SELLER</text>
 
       {/* buyer node */}
-      <circle cx="80" cy="350" r="20" fill="#0a0a0d" stroke="var(--coral)" strokeWidth="1.2" />
+      <circle cx="80" cy="350" r="20" fill="var(--canvas)" stroke="var(--coral)" strokeWidth="1.2" />
       <text x="80" y="353" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--coral)">BUYER</text>
 
       {/* AI agent node */}
-      <circle cx="360" cy="350" r="20" fill="#0a0a0d" stroke="var(--violet)" strokeWidth="1.2" />
+      <circle cx="360" cy="350" r="20" fill="var(--canvas)" stroke="var(--violet)" strokeWidth="1.2" />
       <text x="360" y="353" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--violet)">AGENT</text>
 
       {/* referrer node */}
-      <circle cx="220" cy="40" r="18" fill="#0a0a0d" stroke="currentColor" strokeWidth="1.2" />
+      <circle cx="220" cy="40" r="18" fill="var(--canvas)" stroke="currentColor" strokeWidth="1.2" />
       <text x="220" y="43" textAnchor="middle" fontSize="7.5" fontFamily="var(--font-mono)" fill="var(--cream)">REFERRER</text>
     </svg>
   );
@@ -98,7 +98,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-5">
             <a
               href="#launch"
-              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-lime px-7 py-3.5 font-mono text-[13px] font-medium uppercase tracking-wider text-canvas transition-transform hover:scale-[1.03]"
+              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-accent px-7 py-3.5 font-mono text-[13px] font-medium uppercase tracking-wider text-ink transition-transform hover:scale-[1.03]"
             >
               Build your distribution ecosystem
               <span aria-hidden className="transition-transform group-hover:translate-x-1">

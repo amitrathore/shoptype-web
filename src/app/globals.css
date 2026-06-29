@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-:root {
+:root,
+[data-theme="dark"] {
   --canvas: #0a0a0d;
   --canvas-raised: #111114;
   --cream: #f4eee2;
@@ -10,6 +11,26 @@
   --coral: #ff6a4a;
   --violet: #8b7bff;
   --line: rgba(244, 238, 226, 0.12);
+  --glow-lime: 0 0 40px rgba(255, 215, 0, 0.35);
+}
+
+[data-theme="light"] {
+  --canvas: #f8f4ea;
+  --canvas-raised: #efe7d4;
+  --cream: #1c1812;
+  --cream-dim: #6e6457;
+  --lime: #93680a;
+  --lime-dim: #ab7e15;
+  --coral: #c8431f;
+  --violet: #5b49d6;
+  --line: rgba(28, 24, 18, 0.1);
+  --glow-lime: 0 0 30px rgba(147, 104, 10, 0.18);
+}
+
+/* always-gold button fill, independent of theme, paired with --ink text */
+:root {
+  --accent: #ffd700;
+  --ink: #0a0a0d;
 }
 
 @theme inline {
@@ -22,6 +43,8 @@
   --color-coral: var(--coral);
   --color-violet: var(--violet);
   --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-ink: var(--ink);
   --font-display: var(--font-display);
   --font-mono: var(--font-mono);
   --font-body: var(--font-body);
@@ -40,11 +63,12 @@ body {
   background: var(--canvas);
   color: var(--cream);
   position: relative;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 ::selection {
   background: var(--lime);
-  color: #0a0a0d;
+  color: var(--ink);
 }
 
 /* grain overlay */
@@ -69,7 +93,7 @@ body::before {
 }
 
 .text-glow-lime {
-  text-shadow: 0 0 40px rgba(255, 215, 0, 0.35);
+  text-shadow: var(--glow-lime);
 }
 
 .bg-grid {
@@ -147,4 +171,16 @@ body::before {
 
 .animate-spin-slow {
   animation: spin-slow 18s linear infinite;
+}
+
+.theme-icon-light {
+  display: none;
+}
+
+[data-theme="light"] .theme-icon-dark {
+  display: none;
+}
+
+[data-theme="light"] .theme-icon-light {
+  display: block;
 }

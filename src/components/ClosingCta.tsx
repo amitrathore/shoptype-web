@@ -26,7 +26,7 @@ export default function ClosingCta() {
         <div className="mt-10 flex justify-center">
           <a
             href="#top"
-            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-lime px-8 py-4 font-mono text-sm font-medium uppercase tracking-wider text-canvas transition-transform hover:scale-[1.03]"
+            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-accent px-8 py-4 font-mono text-sm font-medium uppercase tracking-wider text-ink transition-transform hover:scale-[1.03]"
           >
             Build your distribution network today
             <span aria-hidden className="transition-transform group-hover:translate-x-1">
