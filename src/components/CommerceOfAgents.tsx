@@ -17,8 +17,9 @@ export default function CommerceOfAgents() {
               Partner-driven growth, built in
             </p>
             <h2 className="mt-4 max-w-xl font-display text-3xl leading-[1.1] tracking-tight text-cream md:text-4xl">
-              Every Shoptype network leverages{" "}
-              <span className="text-lime">Commerce of Agents</span>.
+              Shoptype is built on the{" "}
+              <span className="text-lime italic">Commerce of Agents</span>{" "}
+              Protocol.
             </h2>
           </div>
           <div className="max-w-sm">
