@@ -80,9 +80,9 @@ export default function Hero() {
           </div>
 
           <h1 className="font-display text-[13vw] leading-[0.98] tracking-tight text-cream md:text-[clamp(2.6rem,5.4vw,5.2rem)]">
-            Growth
+            Growth Intelligence
             <br />
-            <span className="text-glow-lime text-lime">for the Age of AI</span>
+            <span className="text-glow-lime text-lime">for the Age of Agents</span>
             <span className="text-cream-dim">.</span>
           </h1>
 
