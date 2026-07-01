@@ -89,10 +89,10 @@ export default function Hero() {
           <p className="mt-7 max-w-xl font-body text-lg leading-relaxed text-cream-dim md:text-xl">
             <strong className="font-semibold text-cream">Shoptype</strong>{" "}
             turns your business into a growth ecosystem — a network of
-            human cosellers and AI agents that find buyers, share products,
-            and drive sales on your behalf. The agentic market underneath
-            handles the transacting; distribution is what actually grows
-            you.
+            human cosellers and AI agents that find buyers, share content,
+            recommend products, and drive sales on your behalf. The agentic
+            market underneath handles the transacting; full-funnel
+            distribution is what actually grows you.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">

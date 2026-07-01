@@ -21,7 +21,7 @@ const hanken = Hanken_Grotesk({
 
 const title = "Shoptype — Growth for the Age of AI";
 const description =
-  "Shoptype turns any business into a growth ecosystem — a network of human cosellers and AI agents that find buyers, share products, and drive sales for you.";
+  "Shoptype turns any business into a growth ecosystem — a network of human cosellers and AI agents that find buyers, share content, recommend products, and drive sales for you.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shoptype.com"),

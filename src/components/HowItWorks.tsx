@@ -12,7 +12,7 @@ const steps = [
   {
     n: "03",
     title: "Let humans and AI agents distribute for you.",
-    body: "Every product is shareable, by a person or surfaced by an AI agent shopping on a buyer's behalf. Every share that leads to a sale earns a cut, automatically.",
+    body: "Every article, video, post, story, recommendation, and product is shareable by a person or surfaced by an AI agent. Every contribution can earn attribution when it helps move a buyer forward.",
   },
   {
     n: "04",

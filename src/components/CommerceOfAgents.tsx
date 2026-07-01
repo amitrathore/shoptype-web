@@ -1,9 +1,30 @@
 const roles = [
   "SELLERS EARN",
+  "CONTENT SHARES EARN",
   "BUYERS WHO SHARE EARN",
   "REFERRERS EARN",
-  "EVERY SHARE IS TRACKED",
+  "FULL-FUNNEL ATTRIBUTION",
+  "NO LAST-CLICK PRESSURE",
   "EVERY PAYOUT IS AUTOMATIC",
+];
+
+const cosellingPoints = [
+  {
+    label: "Share content, not just products",
+    body: "Articles, videos, posts, stories, recommendations, and product pages can all become tracked growth surfaces.",
+  },
+  {
+    label: "Full-funnel attribution",
+    body: "Cosellers can get credit for awareness, education, engagement, and close — not only the final click.",
+  },
+  {
+    label: "#noselling by design",
+    body: "People can share what is useful without the high-pressure tactics that last-click affiliate programs create.",
+  },
+  {
+    label: "Native rewards",
+    body: "The Commerce of Agents Protocol handles contribution tracking and automatic payouts inside the market.",
+  },
 ];
 
 export default function CommerceOfAgents() {
@@ -24,8 +45,9 @@ export default function CommerceOfAgents() {
           </div>
           <div className="max-w-sm">
             <p className="font-body text-[15px] leading-relaxed text-cream-dim">
-              Every seller, coseller, and referrer earns automatically —
-              you don&rsquo;t configure any of it. It&rsquo;s just how
+              Every seller, coseller, and referrer earns automatically.
+              Cosellers can share useful content, not just product links,
+              and still receive full-funnel attribution. It&rsquo;s just how
               Shoptype works.
             </p>
             <a
@@ -38,6 +60,19 @@ export default function CommerceOfAgents() {
               <span aria-hidden>&rarr;</span>
             </a>
           </div>
+        </div>
+
+        <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+          {cosellingPoints.map((point) => (
+            <div key={point.label} className="bg-canvas p-6">
+              <h3 className="font-mono text-[11px] uppercase tracking-wider text-lime">
+                {point.label}
+              </h3>
+              <p className="mt-3 font-body text-[13px] leading-relaxed text-cream-dim">
+                {point.body}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 

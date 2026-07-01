@@ -2,7 +2,7 @@ const cs = [
   {
     n: "01",
     name: "Content",
-    body: "Posts, videos, and stories that pull people in and establish what your market is about.",
+    body: "Articles, videos, posts, stories, and recommendations that pull people in and give cosellers something useful to share.",
   },
   {
     n: "02",
@@ -17,7 +17,7 @@ const cs = [
   {
     n: "04",
     name: "Cosellers",
-    body: "Human partners and AI agents share what they love, earning a cut of every sale they drive.",
+    body: "Members share content or products without a hard sell, earning for the full-funnel value they help create.",
   },
   {
     n: "05",
@@ -104,9 +104,9 @@ export default function FiveCs() {
               Growth doesn&rsquo;t come from ads — it comes from a loop.
               Content draws a community in. Community becomes commerce.
               Commerce pays cosellers — human and AI — for distributing
-              what you sell. Cosellers fuel campaigns. And campaigns
-              produce the next round of content, aimed at exactly
-              who&rsquo;s buying.
+              articles, videos, posts, recommendations, and products.
+              Cosellers fuel campaigns. And campaigns produce the next
+              round of content, aimed at exactly who&rsquo;s buying.
             </p>
           </div>
 
