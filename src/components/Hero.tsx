@@ -76,11 +76,11 @@ export default function Hero() {
         <div className="animate-rise">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-line px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-wider text-cream-dim">
             <span className="h-1.5 w-1.5 rounded-full bg-lime" />
-            The distribution layer for any business
+            The market ecosystem layer for any business
           </div>
 
           <h1 className="font-display text-[13vw] leading-[0.98] tracking-tight text-cream md:text-[clamp(2.6rem,5.4vw,5.2rem)]">
-            Growth Intelligence
+            Market Ecosystems
             <br />
             <span className="text-glow-lime text-lime">for the Age of Agents</span>
             <span className="text-cream-dim">.</span>
@@ -88,11 +88,11 @@ export default function Hero() {
 
           <p className="mt-7 max-w-xl font-body text-lg leading-relaxed text-cream-dim md:text-xl">
             <strong className="font-semibold text-cream">Shoptype</strong>{" "}
-            turns your business into a growth ecosystem — a network of
+            turns your business into a living market ecosystem — a network of
             human cosellers and AI agents that find buyers, share content,
             recommend products, and drive sales on your behalf. The agentic
-            market underneath handles the transacting; full-funnel
-            distribution is what actually grows you.
+            market underneath handles the transacting; the ecosystem around
+            it is what actually grows you.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">
@@ -100,7 +100,7 @@ export default function Hero() {
               href="#launch"
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-accent px-7 py-3.5 font-mono text-[13px] font-medium uppercase tracking-wider text-ink transition-transform hover:scale-[1.03]"
             >
-              Build your distribution ecosystem
+              Build your market ecosystem
               <span aria-hidden className="transition-transform group-hover:translate-x-1">
                 &rarr;
               </span>
