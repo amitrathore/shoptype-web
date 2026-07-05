@@ -76,7 +76,7 @@ export default function Hero() {
         <div className="animate-rise">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-line px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-wider text-cream-dim">
             <span className="h-1.5 w-1.5 rounded-full bg-lime" />
-            The market ecosystem layer for any business
+            The growth and distribution layer for any business
           </div>
 
           <h1 className="font-display text-[13vw] leading-[0.98] tracking-tight text-cream md:text-[clamp(2.6rem,5.4vw,5.2rem)]">
@@ -90,9 +90,10 @@ export default function Hero() {
             <strong className="font-semibold text-cream">Shoptype</strong>{" "}
             turns your business into a living market ecosystem — a network of
             human cosellers and AI agents that find buyers, share content,
-            recommend products, and drive sales on your behalf. The agentic
-            market underneath handles the transacting; the ecosystem around
-            it is what actually grows you.
+            recommend products, and drive sales on your behalf. Agentic
+            markets are the infrastructure underneath: they handle the
+            transacting and plug you into the agentic economy, while
+            full-funnel growth and distribution is what actually scales you.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-5">

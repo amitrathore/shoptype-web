@@ -95,7 +95,7 @@ export default function FiveCs() {
         <div className="grid grid-cols-1 gap-14 md:grid-cols-[1fr_0.95fr] md:items-center">
           <div>
             <p className="font-mono text-[11px] uppercase tracking-wider text-coral">
-              The market ecosystem flywheel
+              The growth and distribution flywheel
             </p>
             <h2 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
               The 5Cs Flywheel drives self-improving market ecosystems
