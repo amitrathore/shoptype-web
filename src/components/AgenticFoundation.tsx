@@ -28,7 +28,7 @@ export default function AgenticFoundation() {
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-mono text-[11px] uppercase tracking-wider text-violet">
-            The engine underneath your distribution
+            The agentic market infrastructure underneath
           </p>
           <h2 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
             It&rsquo;s the foundation.
@@ -77,8 +77,9 @@ export default function AgenticFoundation() {
         <p className="mx-auto mt-14 max-w-2xl text-center font-display text-2xl leading-snug text-cream md:text-3xl">
           Leveraging Shoptype isn&rsquo;t just skipping the cost of
           building a store. It&rsquo;s skipping a generation of commerce
-          infrastructure — and building the distribution network to
-          outgrow it.
+          infrastructure — standing up the agentic market that unlocks the
+          agentic economy, and the market ecosystem that grows and
+          distributes on top of it.
         </p>
       </div>
     </section>

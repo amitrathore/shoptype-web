@@ -21,7 +21,7 @@ const hanken = Hanken_Grotesk({
 
 const title = "Shoptype — Market Ecosystems for the Age of Agents";
 const description =
-  "Shoptype turns any business into a living market ecosystem — a network of human cosellers and AI agents that find buyers, share content, recommend products, and drive sales for you.";
+  "Shoptype turns any business into a living market ecosystem — agentic market infrastructure plus a network of human cosellers and AI agents that drive growth, distribution, and sales, unlocking the agentic economy while you become the platform for your industry.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shoptype.com"),
