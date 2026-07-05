@@ -95,10 +95,10 @@ export default function FiveCs() {
         <div className="grid grid-cols-1 gap-14 md:grid-cols-[1fr_0.95fr] md:items-center">
           <div>
             <p className="font-mono text-[11px] uppercase tracking-wider text-coral">
-              The distribution flywheel
+              The market ecosystem flywheel
             </p>
             <h2 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-5xl">
-              The 5Cs Flywheel drives self-improving Growth Intelligence
+              The 5Cs Flywheel drives self-improving market ecosystems
             </h2>
             <p className="mt-6 max-w-md font-body text-base leading-relaxed text-cream-dim">
               Growth doesn&rsquo;t come from ads — it comes from a loop.
