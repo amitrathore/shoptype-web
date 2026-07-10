@@ -81,20 +81,16 @@ export default function LeadCapture() {
             </>
           ) : (
             <div className="flex min-h-[560px] flex-col justify-center rounded-xl border border-line bg-canvas p-8">
-              <p className="font-mono text-[11px] uppercase tracking-wider text-coral">
-                Tally form id missing
+              <p className="font-mono text-[11px] uppercase tracking-wider text-lime-dim">
+                Launch applications
               </p>
               <h3 className="mt-4 font-display text-3xl leading-tight text-cream">
-                Add your Tally form id to turn this into live lead capture.
+                The application form is being connected.
               </h3>
               <p className="mt-4 font-body text-sm leading-relaxed text-cream-dim">
-                Set{" "}
-                <code className="font-mono text-lime">
-                  NEXT_PUBLIC_TALLY_FORM_ID
-                </code>{" "}
-                to the form id from your Tally share URL. This section is
-                already wired for Tally embeds, dynamic height, transparent
-                background, and a source tag for attribution.
+                We are preparing intake for businesses ready to build market
+                ecosystems around sellers, creators, partners, and AI-ready
+                distribution. Please check back shortly.
               </p>
             </div>
           )}
