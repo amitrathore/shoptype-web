@@ -6,7 +6,7 @@ import AgenticFoundation from "@/components/AgenticFoundation";
 import CommerceOfAgents from "@/components/CommerceOfAgents";
 import HowItWorks from "@/components/HowItWorks";
 import WhoItsFor from "@/components/WhoItsFor";
-import ClosingCta from "@/components/ClosingCta";
+import LeadCapture from "@/components/LeadCapture";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
         <HowItWorks />
         <WhoItsFor />
         <CommerceOfAgents />
-        <ClosingCta />
+        <LeadCapture />
       </main>
       <Footer />
     </>
