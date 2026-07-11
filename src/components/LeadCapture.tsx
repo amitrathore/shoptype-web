@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-const tallyFormId = "";
+const tallyFormId = "dW1bXD";
 
 const qualifiers = [
   "Your industry vertical and current audience",
@@ -65,13 +65,13 @@ export default function LeadCapture() {
                 src={tallyUrl}
                 loading="eager"
                 width="100%"
-                height="1200"
+                height="1500"
                 frameBorder="0"
                 marginHeight={0}
                 marginWidth={0}
                 scrolling="no"
                 title="Shoptype launch application"
-                className="block h-[1200px] w-full rounded-lg bg-transparent md:h-[920px] md:rounded-xl"
+                className="block min-h-[1500px] w-full rounded-lg bg-transparent md:min-h-[1180px] md:rounded-xl"
                 style={{ border: 0, overflow: "hidden" }}
               />
               <Script
