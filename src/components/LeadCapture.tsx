@@ -65,13 +65,13 @@ export default function LeadCapture() {
                 src={tallyUrl}
                 loading="eager"
                 width="100%"
-                height="1500"
+                height="920"
                 frameBorder="0"
                 marginHeight={0}
                 marginWidth={0}
                 scrolling="no"
                 title="Shoptype launch application"
-                className="block min-h-[1500px] w-full rounded-lg bg-[#f7f3ea] md:min-h-[1180px] md:rounded-xl"
+                className="block h-[1500px] w-full rounded-lg bg-[#f7f3ea] md:h-[920px] md:rounded-xl"
                 style={{ border: 0, overflow: "hidden" }}
               />
               <Script
