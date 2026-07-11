@@ -11,7 +11,7 @@ const qualifiers = [
 
 export default function LeadCapture() {
   const tallyUrl = tallyFormId
-    ? `https://tally.so/embed/${tallyFormId}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&source=shoptype-web`
+    ? `https://tally.so/embed/${tallyFormId}?alignLeft=1&hideTitle=1&dynamicHeight=1&source=shoptype-web`
     : null;
 
   return (
@@ -57,7 +57,7 @@ export default function LeadCapture() {
           </div>
         </div>
 
-        <div className="-mx-2 rounded-xl border border-line bg-canvas-raised p-2 shadow-[0_24px_80px_rgba(0,0,0,0.24)] sm:mx-0 sm:p-4 md:rounded-2xl md:p-6">
+        <div className="-mx-2 rounded-xl border border-line bg-[#f7f3ea] p-2 shadow-[0_24px_80px_rgba(0,0,0,0.24)] sm:mx-0 sm:p-4 md:rounded-2xl md:p-6">
           {tallyUrl ? (
             <>
               <iframe
@@ -71,7 +71,7 @@ export default function LeadCapture() {
                 marginWidth={0}
                 scrolling="no"
                 title="Shoptype launch application"
-                className="block min-h-[1500px] w-full rounded-lg bg-transparent md:min-h-[1180px] md:rounded-xl"
+                className="block min-h-[1500px] w-full rounded-lg bg-[#f7f3ea] md:min-h-[1180px] md:rounded-xl"
                 style={{ border: 0, overflow: "hidden" }}
               />
               <Script
