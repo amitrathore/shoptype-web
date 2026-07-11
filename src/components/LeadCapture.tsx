@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-const tallyFormId = "ZjeZ1y";
+const tallyFormId = "";
 
 const qualifiers = [
   "Your industry vertical and current audience",
@@ -10,7 +10,9 @@ const qualifiers = [
 ];
 
 export default function LeadCapture() {
-  const tallyUrl = `https://tally.so/embed/${tallyFormId}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&source=shoptype-web`;
+  const tallyUrl = tallyFormId
+    ? `https://tally.so/embed/${tallyFormId}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&source=shoptype-web`
+    : null;
 
   return (
     <section
@@ -56,24 +58,41 @@ export default function LeadCapture() {
         </div>
 
         <div className="-mx-2 rounded-xl border border-line bg-canvas-raised p-2 shadow-[0_24px_80px_rgba(0,0,0,0.24)] sm:mx-0 sm:p-4 md:rounded-2xl md:p-6">
-          <iframe
-            data-tally-src={tallyUrl}
-            src={tallyUrl}
-            loading="eager"
-            width="100%"
-            height="1200"
-            frameBorder="0"
-            marginHeight={0}
-            marginWidth={0}
-            scrolling="no"
-            title="Shoptype launch application"
-            className="block h-[1200px] w-full rounded-lg bg-transparent md:h-[920px] md:rounded-xl"
-            style={{ border: 0, overflow: "hidden" }}
-          />
-          <Script
-            src="https://tally.so/widgets/embed.js"
-            strategy="afterInteractive"
-          />
+          {tallyUrl ? (
+            <>
+              <iframe
+                data-tally-src={tallyUrl}
+                src={tallyUrl}
+                loading="eager"
+                width="100%"
+                height="1200"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
+                scrolling="no"
+                title="Shoptype launch application"
+                className="block h-[1200px] w-full rounded-lg bg-transparent md:h-[920px] md:rounded-xl"
+                style={{ border: 0, overflow: "hidden" }}
+              />
+              <Script
+                src="https://tally.so/widgets/embed.js"
+                strategy="afterInteractive"
+              />
+            </>
+          ) : (
+            <div className="flex min-h-[560px] flex-col justify-center rounded-lg border border-line bg-canvas px-6 py-10 md:min-h-[620px] md:rounded-xl md:px-10">
+              <p className="font-mono text-[11px] uppercase tracking-wider text-lime-dim">
+                Launch applications
+              </p>
+              <h3 className="mt-4 max-w-md font-display text-3xl leading-tight tracking-tight text-cream md:text-4xl">
+                The Shoptype application form is being connected.
+              </h3>
+              <p className="mt-5 max-w-md font-body text-sm leading-relaxed text-cream-dim md:text-base">
+                We removed an unverified form id and are waiting on the correct
+                Shoptype Tally form before turning this into live lead capture.
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>
