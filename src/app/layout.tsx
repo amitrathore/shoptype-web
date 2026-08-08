@@ -21,7 +21,7 @@ const hanken = Hanken_Grotesk({
 
 const title = "Shoptype — Market Ecosystems for the Age of Agents";
 const description =
-  "Shoptype turns any business into a living market ecosystem — agentic market infrastructure plus a network of human cosellers and AI agents that drive growth, distribution, and sales, unlocking the agentic economy while you become the platform for your industry.";
+  "Shoptype builds market ecosystems for the age of agents—turning businesses into platforms where human cosellers and AI agents find buyers and drive sales.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shoptype.com"),
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   description,
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
       { url: "/icon.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon.ico", sizes: "any" },
     ],
     apple: "/apple-touch-icon.png",
   },
@@ -41,13 +41,21 @@ export const metadata: Metadata = {
     siteName: "Shoptype",
     type: "website",
     locale: "en_US",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: title }],
+    images: [{ url: "/og-image-v2.png", width: 1200, height: 630, alt: title }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/og-image.png"],
+    images: [
+      {
+        url: "/og-image-v2.png",
+        alt: title,
+        type: "image/png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 
