@@ -1,104 +1,44 @@
 import Script from "next/script";
-
-const tallyFormId = "dW1bXD";
-
-const qualifiers = [
-  "The community, industry, or niche you want to serve",
-  "The products, services, and sellers you want to bring together",
-  "Your starting point: an audience, a business, or a new idea",
-  "Timeline, budget range, and best next conversation",
-];
-
+const tallyUrl =
+  "https://tally.so/embed/dW1bXD?alignLeft=1&hideTitle=1&dynamicHeight=1&source=shoptype-web";
 export default function LeadCapture() {
-  const tallyUrl = tallyFormId
-    ? `https://tally.so/embed/${tallyFormId}?alignLeft=1&hideTitle=1&dynamicHeight=1&source=shoptype-web`
-    : null;
-
   return (
-    <section
-      id="launch"
-      className="relative overflow-hidden border-t border-line py-28 md:py-40"
-    >
-      <div className="bg-grid bg-grid-drift absolute inset-0 -z-10 opacity-[0.25]" />
-      <div className="absolute bottom-0 left-1/2 -z-10 h-[480px] w-[480px] -translate-x-1/2 rounded-full bg-lime/10 blur-[150px]" />
-
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 px-6 md:grid-cols-[0.9fr_1.1fr] md:px-10 md:items-start">
-        <div>
-          <p className="font-mono text-[11px] uppercase tracking-wider text-cream-dim">
-            Launch an agentic market
-          </p>
-          <h2 className="mt-5 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-6xl">
-            You know the opportunity.
+    <section id="launch" className="section-shell launch-section">
+      <div className="section-inner launch-grid">
+        <div className="visual-section-heading">
+          <p className="eyebrow">Launch with our team</p>
+          <h2>
+            Your community.
             <br />
-            <span className="text-lime text-glow-lime">
-              Build your market with us.
-            </span>
+            Your industry.
+            <br />
+            <span className="text-lime">Your market.</span>
           </h2>
-          <p className="mt-7 max-w-xl font-body text-base leading-relaxed text-cream-dim md:text-lg">
-            Bring your expertise, audience, or industry relationships. You don’t
-            have to build every product to build a valuable business around
-            them. Tell us who your market will serve and what you want to offer.
-            We’ll work through the launch with you.
+          <p>
+            Bring the audience or the idea. We’ll help you bring sellers,
+            products, and commerce together.
           </p>
-
-          <p className="mt-5 text-sm leading-relaxed text-cream-dim">
-            Launch with our team. This is a guided application, rather than
-            instant self-service market creation.
-          </p>
-
-          <div className="mt-10 border-y border-line">
-            {qualifiers.map((qualifier, index) => (
-              <div
-                key={qualifier}
-                className="grid grid-cols-[44px_1fr] gap-4 border-b border-line py-4 last:border-b-0"
-              >
-                <span className="font-mono text-xs text-lime-dim">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <p className="font-body text-sm leading-relaxed text-cream-dim">
-                  {qualifier}
-                </p>
-              </div>
-            ))}
-          </div>
+          <span className="launch-label">Guided launch application</span>
         </div>
-
-        <div className="-mx-2 rounded-xl border border-line bg-[#f7f3ea] p-2 shadow-[0_24px_80px_rgba(0,0,0,0.24)] sm:mx-0 sm:p-4 md:rounded-2xl md:p-6">
-          {tallyUrl ? (
-            <>
-              <iframe
-                data-tally-src={tallyUrl}
-                src={tallyUrl}
-                loading="eager"
-                width="100%"
-                height="920"
-                frameBorder="0"
-                marginHeight={0}
-                marginWidth={0}
-                scrolling="no"
-                title="Shoptype launch application"
-                className="block h-[1500px] w-full rounded-lg bg-[#f7f3ea] md:h-[920px] md:rounded-xl"
-                style={{ border: 0, overflow: "hidden" }}
-              />
-              <Script
-                src="https://tally.so/widgets/embed.js"
-                strategy="afterInteractive"
-              />
-            </>
-          ) : (
-            <div className="flex min-h-[560px] flex-col justify-center rounded-lg border border-line bg-canvas px-6 py-10 md:min-h-[620px] md:rounded-xl md:px-10">
-              <p className="font-mono text-[11px] uppercase tracking-wider text-lime-dim">
-                Launch applications
-              </p>
-              <h3 className="mt-4 max-w-md font-display text-3xl leading-tight tracking-tight text-cream md:text-4xl">
-                The Shoptype application form is being connected.
-              </h3>
-              <p className="mt-5 max-w-md font-body text-sm leading-relaxed text-cream-dim md:text-base">
-                We removed an unverified form id and are waiting on the correct
-                Shoptype Tally form before turning this into live lead capture.
-              </p>
-            </div>
-          )}
+        <div className="launch-form">
+          <iframe
+            data-tally-src={tallyUrl}
+            src={tallyUrl}
+            loading="lazy"
+            width="100%"
+            height="920"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            scrolling="no"
+            title="Shoptype launch application"
+            className="block h-[1500px] w-full rounded-lg bg-[#f7f3ea] md:h-[920px]"
+            style={{ border: 0, overflow: "hidden" }}
+          />
+          <Script
+            src="https://tally.so/widgets/embed.js"
+            strategy="lazyOnload"
+          />
         </div>
       </div>
     </section>

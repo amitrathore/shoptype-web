@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-agentic-commerce-v3.png",
+        url: "/og-market-connections-v4.png",
         width: 1200,
         height: 630,
         alt: title,
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: "/og-agentic-commerce-v3.png",
+        url: "/og-market-connections-v4.png",
         alt: title,
         type: "image/png",
         width: 1200,
@@ -74,13 +74,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-theme="light"
       className={`${fraunces.variable} ${plexMono.variable} ${hanken.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var s=localStorage.getItem("shoptype-theme");document.documentElement.dataset.theme=s==="light"?"light":"dark";}catch(e){}})();`,
+            __html: `(function(){try{var s=localStorage.getItem("shoptype-theme");document.documentElement.dataset.theme=s==="dark"?"dark":"light";}catch(e){}})();`,
           }}
         />
       </head>

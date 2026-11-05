@@ -28,7 +28,6 @@ const groups = [
       ["Opentangle", "https://opentangle.ai"],
       ["Daemons", "https://daemons.ai/"],
       ["Toolisman", "https://toolisman.com/"],
-      ["AwakeVC", "https://awake.vc/"],
       ["Yvatar", "https://yvatar.com"],
       ["Coselling.ai", "https://coselling.ai"],
       ["Commerce of Agents", "https://www.commerceofagents.com"],
@@ -91,10 +90,19 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 flex flex-col gap-5 border-t border-line pt-7 text-xs text-cream-dim sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            &copy; {new Date().getFullYear()} {legalOperator}. All rights
-            reserved.
-          </p>
+          <div>
+            <p>
+              &copy; {new Date().getFullYear()} {legalOperator}. All rights
+              reserved.
+            </p>
+            <p className="mt-3">
+              An{" "}
+              <Link href="https://awake.vc/" className="text-link">
+                Awake Venture
+              </Link>
+              .
+            </p>
+          </div>
           <div className="flex items-center gap-3">
             <span>Appearance</span>
             <ThemeToggle />

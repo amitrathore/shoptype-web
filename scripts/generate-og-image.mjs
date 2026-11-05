@@ -1,173 +1,28 @@
-import { readFileSync, writeFileSync } from "fs";
-import { join } from "path";
-import { fileURLToPath } from "url";
-import React from "react";
-import { ImageResponse } from "next/og.js";
+import { readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
-const __dirname = fileURLToPath(new URL(".", import.meta.url));
-const publicDir = join(__dirname, "..", "public");
-const e = React.createElement;
-const background = `data:image/png;base64,${readFileSync(join(publicDir, "og-ecosystem-bg.png"), "base64")}`;
+const publicDir = fileURLToPath(new URL("../public/", import.meta.url));
 const logo = `data:image/png;base64,${readFileSync(join(publicDir, "logo.png"), "base64")}`;
-
-const markup = e(
-  "div",
-  {
-    style: {
-      width: "100%",
-      height: "100%",
-      display: "flex",
-      flexDirection: "column",
-      backgroundColor: "#0a1220",
-      padding: 0,
-      position: "relative",
-      overflow: "hidden",
-    },
-  },
-  e("img", {
-    src: background,
-    width: 1200,
-    height: 630,
-    style: {
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: 1200,
-      height: 630,
-      objectFit: "cover",
-    },
-  }),
-  e("div", {
-    style: {
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: 1200,
-      height: 630,
-      background: "linear-gradient(90deg, #0a1220 0%, rgba(10,18,32,0.98) 38%, rgba(10,18,32,0.45) 61%, rgba(10,18,32,0.05) 100%)",
-    },
-  }),
-  e("div", {
-    style: {
-      position: "absolute",
-      top: 1,
-      left: 1,
-      width: 1198,
-      height: 628,
-      border: "1px solid rgba(244, 238, 226, 0.12)",
-    },
-  }),
-  e(
-    "div",
-    {
-      style: {
-        display: "flex",
-        alignItems: "center",
-        gap: 14,
-        position: "absolute",
-        top: 60,
-        left: 64,
-      },
-    },
-    e("img", {
-      src: logo,
-      width: 40,
-      height: 40,
-      style: { objectFit: "contain" },
-    }),
-    e(
-      "div",
-      {
-        style: {
-          fontSize: 30,
-          fontWeight: 700,
-          color: "#f4eee2",
-          letterSpacing: -0.7,
-        },
-      },
-      "Shoptype"
-    )
-  ),
-  e(
-    "div",
-    {
-      style: {
-        display: "flex",
-        flexDirection: "column",
-        position: "absolute",
-        top: 192,
-        left: 64,
-        width: 1060,
-      },
-    },
-    e(
-      "div",
-      {
-        style: {
-          fontSize: 64,
-          fontWeight: 700,
-          lineHeight: 0.98,
-          color: "#f4eee2",
-          letterSpacing: -3.2,
-        },
-      },
-      "Your products and services."
-    ),
-    e(
-      "div",
-      {
-        style: {
-          marginTop: 10,
-          fontSize: 57,
-          fontWeight: 700,
-          lineHeight: 1,
-          color: "#ffd700",
-          letterSpacing: -2.6,
-        },
-      },
-      "More markets. Ready for agents."
-    ),
-    e(
-      "div",
-      {
-        style: {
-          marginTop: 30,
-          fontSize: 23,
-          lineHeight: 1.35,
-          color: "#d1c9bb",
-          maxWidth: 640,
-        },
-      },
-      "Connect your business. Connect your market. Or launch an agentic market with Shoptype."
-    )
-  ),
-  e(
-    "div",
-    {
-      style: {
-        display: "flex",
-        alignItems: "center",
-        position: "absolute",
-        left: 64,
-        bottom: 48,
-        gap: 18,
-        fontSize: 16,
-        color: "#9d9587",
-        letterSpacing: 2.4,
-        textTransform: "uppercase",
-      },
-    },
-    e("div", {
-      style: { width: 110, height: 2, backgroundColor: "#ffd700" },
-    }),
-    "shoptype.com"
-  )
-);
-
-const response = new ImageResponse(markup, { width: 1200, height: 630 });
-const buffer = Buffer.from(await response.arrayBuffer());
-const outPath = join(publicDir, "og-agentic-commerce-v3.png");
+const store = (x, y, label) =>
+  `<g transform="translate(${x} ${y})"><rect x="-47" y="-40" width="94" height="82" rx="12" fill="#fffdf7" stroke="#c7bfac"/><g fill="none" stroke="#192a3b" stroke-width="2" stroke-linejoin="round"><path d="M-24-4v29h48V-4M-29-4l8-16h42l8 16M-29-4h58M-16-20v16M0-20v16M16-20v16M-10 25V9H4v16M11 9h6v7h-6"/></g><path d="M-24-20h48" stroke="#ffd700" stroke-width="5"/><text y="63" text-anchor="middle" font-size="15" fill="#192a3b">${label}</text></g>`;
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#f8f4ea"/><rect x="20" y="20" width="1160" height="590" rx="20" fill="none" stroke="#ddd6c7"/>
+<image href="${logo}" x="60" y="58" width="42" height="42"/><text x="116" y="90" font-family="Arial,sans-serif" font-size="31" fill="#192a3b">Shoptype</text>
+<g font-family="Arial,sans-serif"><text x="60" y="228" font-size="64" font-weight="700" letter-spacing="-2" fill="#192a3b">Your business.</text><text x="60" y="304" font-size="64" font-weight="700" letter-spacing="-2" fill="#93680a">More markets.</text>
+<text x="62" y="365" font-size="23" fill="#6e6457">Products, services and markets.</text><text x="62" y="399" font-size="23" fill="#6e6457">Connected for the age of agents.</text>
+<text x="62" y="553" font-size="16" letter-spacing="3" fill="#6e6457">SHOPTYPE.COM</text>
+<g fill="none" stroke="#b5b2a3" stroke-width="2"><path d="M624 228C695 228 670 320 738 320M624 415C695 415 670 320 738 320M802 320C860 320 843 186 895 186M802 320H895M802 320C860 320 843 442 895 442M989 186C1030 186 1033 240 1085 240M989 314C1030 314 1033 240 1085 240M989 442C1030 442 1033 400 1085 400M989 314C1030 314 1033 400 1085 400"/></g>
+<circle cx="770" cy="320" r="49" fill="#192a3b" stroke="#ffd700" stroke-width="2"/><image href="${logo}" x="742" y="292" width="56" height="56"/><text x="770" y="396" text-anchor="middle" font-size="19" font-weight="700" fill="#192a3b">Shoptype</text>
+<circle cx="604" cy="228" r="36" fill="#d7e9ec"/><g fill="none" stroke="#192a3b" stroke-width="2" stroke-linejoin="round"><path d="m583 220 21-10 21 10v22l-21 10-21-10ZM583 220l21 10 21-10M604 230v22"/></g><text x="604" y="287" text-anchor="middle" font-size="16" fill="#192a3b">Products</text>
+<circle cx="604" cy="415" r="36" fill="#f3dfc6"/><g fill="none" stroke="#192a3b" stroke-width="2"><circle cx="604" cy="404" r="9"/><path d="M586 437v-5a18 18 0 0 1 36 0v5Z"/></g><text x="604" y="473" text-anchor="middle" font-size="16" fill="#192a3b">Services</text>
+${store(942, 186, "Creator market")}${store(942, 314, "Business market")}${store(942, 442, "Industry market")}
+<circle cx="1105" cy="240" r="31" fill="#f3dfc6"/><g fill="none" stroke="#192a3b" stroke-width="2"><circle cx="1105" cy="231" r="8"/><path d="M1091 256v-3a14 14 0 0 1 28 0v3Z"/></g><text x="1105" y="293" text-anchor="middle" font-size="16" fill="#192a3b">People</text>
+<circle cx="1105" cy="400" r="31" fill="#d7e9ec"/><g fill="none" stroke="#192a3b" stroke-width="2"><rect x="1087" y="389" width="36" height="26" rx="7"/><path d="M1105 381v8M1099 408h12"/><circle cx="1097" cy="399" r="2"/><circle cx="1113" cy="399" r="2"/></g><text x="1105" y="453" text-anchor="middle" font-size="16" fill="#192a3b">AI agents</text>
+</g></svg>`;
+const buffer = await sharp(Buffer.from(svg)).png().toBuffer();
+const outPath = join(publicDir, "og-market-connections-v4.png");
 writeFileSync(outPath, buffer);
 console.log(`Wrote ${outPath} (${buffer.length} bytes)`);
 
@@ -199,7 +54,10 @@ icoHeader.writeUInt16LE(1, 2);
 icoHeader.writeUInt16LE(2, 4);
 const entries = Buffer.alloc(32);
 let offset = 38;
-for (const [index, [size, png]] of [[16, icon16], [32, icon32]].entries()) {
+for (const [index, [size, png]] of [
+  [16, icon16],
+  [32, icon32],
+].entries()) {
   const base = index * 16;
   entries.writeUInt8(size, base);
   entries.writeUInt8(size, base + 1);
@@ -209,5 +67,8 @@ for (const [index, [size, png]] of [[16, icon16], [32, icon32]].entries()) {
   entries.writeUInt32LE(offset, base + 12);
   offset += png.length;
 }
-writeFileSync(join(publicDir, "favicon.ico"), Buffer.concat([icoHeader, entries, icon16, icon32]));
+writeFileSync(
+  join(publicDir, "favicon.ico"),
+  Buffer.concat([icoHeader, entries, icon16, icon32]),
+);
 console.log("Wrote favicon.ico, icon.png, and apple-touch-icon.png");
