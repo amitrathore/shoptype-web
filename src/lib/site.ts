@@ -20,7 +20,7 @@ export function legalMetadata(
       type: "website" as const,
       images: [
         {
-          url: "/og-agentic-commerce-v3.png",
+          url: "/og-market-connections-v4.png",
           width: 1200,
           height: 630,
           alt: "Shoptype",
@@ -31,7 +31,7 @@ export function legalMetadata(
       card: "summary_large_image" as const,
       title: pageTitle,
       description,
-      images: ["/og-agentic-commerce-v3.png"],
+      images: ["/og-market-connections-v4.png"],
     },
   };
 }

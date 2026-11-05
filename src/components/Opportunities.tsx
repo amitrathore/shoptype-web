@@ -1,70 +1,70 @@
-const audiences = [
+import CommerceArt, { type ArtKind } from "@/components/CommerceArt";
+const audiences: {
+  id: string;
+  label: string;
+  title: string;
+  copy: string;
+  nodes: { icon: ArtKind; label: string }[];
+}[] = [
   {
     id: "sellers",
     label: "For sellers",
-    title: "You offer a product or service. Open a new route to buyers.",
-    copy: "Your next customers may already be gathering in someone else’s market. Connect your offering to participating markets and reach beyond your own website and audience.",
-    benefits: [
-      "Bring your existing product or service and connect its supported API workflows.",
-      "Configure catalog, payments, and delivery in one workspace.",
-      "Keep control of your offering and fulfillment while reaching new communities.",
+    title: "Bring your offering to new audiences.",
+    copy: "Keep your product and fulfillment. Connect to markets beyond your own website.",
+    nodes: [
+      { icon: "product", label: "Your offering" },
+      { icon: "catalog", label: "Connect & test" },
+      { icon: "market", label: "Market listing" },
     ],
-    note: "Sign in to create your seller organization, discover listed markets, and apply. Approval and integration setup come before activation.",
   },
   {
     id: "markets",
-    label: "For market operators",
-    title: "You know the audience. Bring the right sellers together.",
-    copy: "Build a stronger destination by assembling complementary products and services around what your buyers need. Shoptype gives you the tools to connect and manage the sellers behind them.",
-    benefits: [
-      "List your market, invite sellers, and review applications.",
-      "Manage seller integrations, testing, and launch readiness.",
-      "Inspect payment, delivery, and market acknowledgment when an order needs attention.",
+    label: "For market owners",
+    title: "Build the catalog your buyers need.",
+    copy: "Bring complementary sellers together. Review, test, and activate each integration.",
+    nodes: [
+      { icon: "service", label: "Your sellers" },
+      { icon: "product", label: "Their offerings" },
+      { icon: "market", label: "Your market" },
     ],
-    note: "Sign in to open markets you own. Your market must support Shoptype Protocol; connecting an existing market may require developer setup.",
   },
 ];
-
 export default function Opportunities() {
   return (
-    <>
-      {audiences.map((audience) => (
-        <section key={audience.id} id={audience.id} className="section-shell">
-          <div className="section-inner grid gap-10 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <p className="eyebrow">{audience.label}</p>
-              <h2 className="section-title">{audience.title}</h2>
-              <p className="section-copy">{audience.copy}</p>
-            </div>
-            <div className="rounded-2xl border border-line bg-canvas-raised/50 p-6 md:p-8">
-              <ul className="space-y-5">
-                {audience.benefits.map((benefit, index) => (
-                  <li key={benefit} className="flex gap-4">
-                    <span
-                      className="font-mono text-sm text-lime"
-                      aria-hidden="true"
-                    >
-                      0{index + 1}
-                    </span>
-                    <span className="leading-relaxed text-cream-dim">
-                      {benefit}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <a
-                className="button-primary mt-8"
-                href="https://app.shoptype.com"
+    <section className="section-shell opportunity-section">
+      <div className="section-inner">
+        <div className="visual-section-heading">
+          <p className="eyebrow">Choose your starting point</p>
+          <h2>Build on either side of the market.</h2>
+        </div>
+        <div className="opportunity-grid">
+          {audiences.map((a) => (
+            <article id={a.id} key={a.id} className="opportunity-panel">
+              <p className="eyebrow">{a.label}</p>
+              <h3>{a.title}</h3>
+              <div
+                className="mini-flow"
+                role="img"
+                aria-label={a.nodes.map((n) => n.label).join(" to ")}
               >
-                Open Shoptype <span aria-hidden="true">↗</span>
+                {a.nodes.map((n, i) => (
+                  <div key={n.label}>
+                    <span className="mini-art">
+                      <CommerceArt kind={n.icon} />
+                    </span>
+                    <span>{n.label}</span>
+                    {i < 2 ? <b aria-hidden="true">→</b> : null}
+                  </div>
+                ))}
+              </div>
+              <p>{a.copy}</p>
+              <a href="https://app.shoptype.com" className="text-link">
+                Open Shoptype ↗
               </a>
-              <p className="mt-5 text-sm leading-relaxed text-cream-dim">
-                {audience.note}
-              </p>
-            </div>
-          </div>
-        </section>
-      ))}
-    </>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

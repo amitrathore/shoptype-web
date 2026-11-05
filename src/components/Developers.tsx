@@ -1,31 +1,20 @@
+import CommerceArt from "@/components/CommerceArt";
 export default function Developers() {
   return (
-    <section id="developers" className="section-shell">
-      <div className="section-inner grid gap-10 lg:grid-cols-2">
-        <div>
-          <p className="eyebrow">For developers &amp; coding agents</p>
-          <h2 className="section-title">
-            Use the workspace.
+    <section id="developers" className="section-shell developer-section">
+      <div className="section-inner developer-grid">
+        <div className="visual-section-heading">
+          <p className="eyebrow">For builders</p>
+          <h2>
+            Your workspace.
             <br />
-            <span className="text-lime">Or bring your agent.</span>
+            Your coding agent.
           </h2>
-          <p className="section-copy">
-            Configure and inspect integrations through Shoptype’s MCP interface.
-            A coding agent can help map products, check launch readiness, trace
-            checkout delivery, and diagnose issues using your existing workspace
-            permissions.
+          <p>
+            Configure and inspect integrations in Shoptype, or connect an
+            authorized coding agent through MCP.
           </p>
-        </div>
-        <div className="rounded-2xl border border-line bg-canvas-raised/50 p-6 md:p-8">
-          <p className="font-mono text-sm text-lime break-all">
-            https://app.shoptype.com/mcp
-          </p>
-          <p className="mt-5 leading-relaxed text-cream-dim">
-            Create a scoped, expiring developer token in Shoptype. Connecting an
-            agent does not activate a seller or grant background access. Payment
-            authorization and other required human steps stay in the workspace.
-          </p>
-          <div className="mt-7 flex flex-col items-start gap-5">
+          <div className="developer-links">
             <a
               className="text-link"
               href="https://app.shoptype.com/mcp-guide.md"
@@ -36,8 +25,36 @@ export default function Developers() {
               className="text-link"
               href="https://app.shoptype.com/shoptype-protocol.md"
             >
-              Read Shoptype Protocol ↗
+              Shoptype Protocol ↗
             </a>
+          </div>
+          <details className="developer-note">
+            <summary>Access &amp; permissions</summary>
+            <p>
+              Developer tokens use your existing permissions. Background
+              authorization and production activation remain separate steps.
+            </p>
+          </details>
+        </div>
+        <div
+          className="developer-art"
+          role="img"
+          aria-label="Shoptype workspace and coding agents connect to the same integration tools"
+        >
+          <div className="developer-interfaces">
+            <div>
+              <CommerceArt kind="window" />
+              <span>Workspace</span>
+            </div>
+            <div>
+              <CommerceArt kind="code" />
+              <span>Coding agent</span>
+            </div>
+          </div>
+          <div className="map-branch" aria-hidden="true" />
+          <div className="developer-target">
+            <CommerceArt kind="catalog" />
+            <strong>Your integrations</strong>
           </div>
         </div>
       </div>

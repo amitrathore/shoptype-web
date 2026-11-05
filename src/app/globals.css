@@ -244,3 +244,742 @@ summary:focus-visible {
     transition: none !important;
   }
 }
+
+/* Commerce illustrations use the same paper, ink, and gold in both themes. */
+:root {
+  --map-paper: #fffdf7;
+  --map-ink: #192a3b;
+  --map-line: #b5b2a3;
+  --map-blue: #d7e9ec;
+  --map-peach: #f3dfc6;
+}
+[data-theme="dark"] {
+  --map-paper: #152337;
+  --map-ink: #f4eee2;
+  --map-line: #59677a;
+  --map-blue: #253f4d;
+  --map-peach: #493c32;
+}
+.visual-hero {
+  padding: 8rem 0 4rem;
+}
+.visual-hero > .section-inner {
+  display: grid;
+  gap: 2rem;
+}
+.hero-intro h1 {
+  margin-top: 1.2rem;
+  font-family: var(--font-display);
+  font-size: clamp(3.3rem, 5.7vw, 5.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+.hero-intro h1 span {
+  color: var(--lime);
+}
+.hero-description {
+  margin-top: 1.5rem;
+  max-width: 24rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--cream-dim);
+}
+.hero-paths {
+  display: grid;
+  gap: 0.6rem;
+}
+.hero-paths a {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 0.8rem 1rem;
+  background: var(--canvas);
+  transition: border-color 0.15s;
+}
+.hero-paths a:hover {
+  border-color: var(--lime);
+}
+.hero-paths a:first-child {
+  background: var(--accent);
+  color: var(--ink);
+  border-color: var(--accent);
+}
+.hero-paths a > span {
+  display: block;
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.hero-paths strong {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.15rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.hero-paths b {
+  font-weight: 400;
+}
+.market-map {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background: var(--map-paper);
+  padding: 1rem;
+}
+.map-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+}
+.map-topline span:last-child {
+  display: none;
+}
+.market-map-desktop {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+.map-category {
+  font-size: 17px;
+  fill: var(--cream-dim);
+}
+.map-label {
+  font-size: 23px;
+  font-weight: 600;
+}
+.map-hub {
+  font-size: 28px;
+  font-weight: 600;
+}
+.map-detail {
+  font-size: 18px;
+}
+.market-map figcaption,
+.seller-example-art figcaption,
+.visual-footnote {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--cream-dim);
+}
+.market-map figcaption {
+  margin: 0.5rem 0.25rem 0;
+}
+.market-map-mobile {
+  padding: 2rem 0 1.5rem;
+}
+.mobile-offerings,
+.mobile-buyers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.mobile-offerings > div,
+.mobile-buyers > div {
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+.mobile-offerings svg,
+.mobile-buyers svg {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.7rem;
+  border-radius: 50%;
+  background: var(--map-blue);
+  color: var(--map-ink);
+}
+.mobile-offerings > div:last-child svg,
+.mobile-buyers > div:first-child svg {
+  background: var(--map-peach);
+}
+.map-plus {
+  font-size: 1.5rem;
+  color: var(--cream-dim);
+}
+.map-vertical-line {
+  height: 2.5rem;
+  width: 1px;
+  background: var(--map-line);
+  margin: 0.6rem auto;
+  position: relative;
+}
+.map-vertical-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 6px;
+  height: 6px;
+  border-bottom: 1px solid var(--map-line);
+  border-right: 1px solid var(--map-line);
+  transform: translateX(-2.5px) rotate(45deg);
+}
+.mobile-hub {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+}
+.mobile-hub img {
+  border-radius: 50%;
+  background: #192a3b;
+  padding: 5px;
+}
+.mobile-hub strong {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+}
+.mobile-hub > span {
+  font-size: 0.75rem;
+  color: var(--cream-dim);
+}
+.map-branch {
+  width: 66%;
+  margin: 1rem auto 0;
+  height: 2rem;
+  border: 1px solid var(--map-line);
+  border-bottom: 0;
+  position: relative;
+}
+.map-branch::before {
+  content: "";
+  position: absolute;
+  height: 1rem;
+  width: 1px;
+  background: var(--map-line);
+  top: -1rem;
+  left: 50%;
+}
+.mobile-markets {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+.mobile-markets > div {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 0.6rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+.mobile-markets svg {
+  width: 3.3rem;
+  height: 3.3rem;
+  color: var(--map-ink);
+  border-top: 3px solid var(--accent);
+}
+.visual-section-heading h2 {
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+.visual-section-heading > p:not(.eyebrow) {
+  max-width: 35rem;
+  color: var(--cream-dim);
+  line-height: 1.7;
+  margin-top: 1.2rem;
+}
+.visual-section-heading > a {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+.purchase-journey {
+  margin-top: 2.5rem;
+}
+.journey-stages {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+.journey-stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  padding: 1.2rem 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.journey-stage:hover {
+  background: var(--canvas-raised);
+}
+.journey-stage.is-current {
+  border-color: var(--lime);
+  background: var(--map-paper);
+}
+.stage-number {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--cream-dim);
+}
+.stage-art {
+  display: grid;
+  place-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: var(--map-blue);
+  margin: 0.5rem 0;
+  color: var(--map-ink);
+}
+.stage-art svg {
+  width: 3.7rem;
+  height: 3.7rem;
+}
+.journey-stage:nth-child(2n) .stage-art {
+  background: var(--map-peach);
+}
+.journey-stage.is-current .stage-art {
+  background: var(--accent);
+  color: #192a3b;
+}
+.journey-stage strong {
+  font-size: 1.1rem;
+}
+.stage-owner {
+  font-size: 0.75rem;
+  color: var(--cream-dim);
+}
+.stage-arrow {
+  position: absolute;
+  right: -1.05rem;
+  top: 5.4rem;
+  font-size: 1.4rem;
+  color: var(--cream-dim);
+  z-index: 1;
+}
+.journey-detail {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: var(--canvas-raised);
+}
+.journey-detail > div:first-child {
+  max-width: 42rem;
+}
+.journey-detail > div:first-child > p:last-child {
+  margin-top: 0.7rem;
+  line-height: 1.7;
+  min-height: 3.4rem;
+}
+.journey-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+.journey-controls button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 1.3rem;
+  background: var(--canvas);
+  cursor: pointer;
+}
+.journey-controls button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.journey-controls span {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+.visual-footnote {
+  margin-top: 1rem;
+}
+.opportunity-section,
+.developer-section {
+  background: var(--canvas-raised);
+}
+.opportunity-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.opportunity-panel {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: var(--map-paper);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+}
+.opportunity-panel h3 {
+  font-family: var(--font-display);
+  margin-top: 1rem;
+  max-width: 25rem;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+.opportunity-panel > p:not(.eyebrow) {
+  color: var(--cream-dim);
+  margin: 1.5rem 0 1rem;
+  line-height: 1.7;
+  max-width: 28rem;
+}
+.mini-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin-top: 2rem;
+}
+.mini-flow > div {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 0.75rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+.mini-art {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.7rem;
+  background: var(--map-blue);
+  border-radius: 50%;
+  color: var(--map-ink);
+}
+.mini-flow > div:nth-child(2) .mini-art {
+  background: var(--map-peach);
+}
+.mini-flow b {
+  position: absolute;
+  right: -0.65rem;
+  top: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--cream-dim);
+}
+.seller-example-grid,
+.developer-grid,
+.launch-grid {
+  display: grid;
+  align-items: center;
+  gap: 2.5rem;
+}
+.seller-example-art {
+  border-radius: 1.5rem;
+  background: var(--canvas-raised);
+  padding: 1.5rem;
+}
+.example-offering {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.example-product-symbol {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--map-blue);
+  color: var(--map-ink);
+}
+.example-product-symbol svg {
+  width: 3rem;
+  height: 3rem;
+}
+.example-offering h3,
+.example-market-heading h3 {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  margin-top: 0.25rem;
+}
+.example-offering p {
+  font-size: 0.85rem;
+  color: var(--cream-dim);
+}
+.example-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: var(--cream-dim);
+}
+.example-connector > span:first-child,
+.example-connector > span:last-child {
+  color: var(--lime);
+  font-size: 1.5rem;
+}
+.example-storefront {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--map-paper);
+}
+.storefront-awning {
+  height: 1rem;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--accent) 0,
+    var(--accent) 22px,
+    var(--map-paper) 22px,
+    var(--map-paper) 44px
+  );
+  border-bottom: 1px solid var(--line);
+}
+.example-market-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+}
+.example-market-heading > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.example-product-row {
+  margin: 0 1.25rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem;
+  background: var(--canvas-raised);
+  border-radius: 0.75rem;
+}
+.example-product-row > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  color: var(--lime);
+}
+.example-product-row > div {
+  display: grid;
+  gap: 0.25rem;
+}
+.example-product-row strong {
+  font-size: 0.9rem;
+}
+.example-product-row > div > span {
+  font-size: 0.7rem;
+  color: var(--cream-dim);
+}
+.example-listing-tag {
+  display: none;
+  margin-left: auto;
+  font-size: 0.75rem;
+}
+.seller-example-art figcaption {
+  margin-top: 1rem;
+}
+.developer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+.developer-note {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--cream-dim);
+}
+.developer-note summary {
+  cursor: pointer;
+  width: fit-content;
+}
+.developer-note p {
+  max-width: 30rem;
+  margin-top: 0.7rem;
+  line-height: 1.7;
+}
+.developer-art {
+  background: var(--map-paper);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  padding: 2rem 1.5rem;
+}
+.developer-interfaces {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.developer-interfaces > div {
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+}
+.developer-interfaces svg {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem;
+  color: var(--map-ink);
+  background: var(--map-blue);
+  border-radius: 0.75rem;
+}
+.developer-interfaces > div:last-child svg {
+  background: var(--map-peach);
+}
+.developer-art .map-branch {
+  transform: rotate(180deg);
+  margin: 1.5rem auto 1rem;
+  height: 1.5rem;
+}
+.developer-target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.developer-target svg {
+  width: 3rem;
+  height: 3rem;
+  color: var(--lime);
+}
+.launch-grid {
+  align-items: start;
+}
+.launch-label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--cream-dim);
+  margin-top: 1.5rem;
+}
+.launch-form {
+  min-width: 0;
+  padding: 0.75rem;
+  background: #f7f3ea;
+  border-radius: 1.25rem;
+  border: 1px solid var(--line);
+}
+@media (min-width: 640px) {
+  .opportunity-panel,
+  .seller-example-art {
+    padding: 2rem;
+  }
+  .example-listing-tag {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .hero-paths {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .market-map-desktop {
+    display: block;
+  }
+  .market-map-mobile {
+    display: none;
+  }
+  .map-topline span:last-child {
+    display: inline;
+  }
+  .market-map {
+    padding: 1.5rem 1rem 1rem;
+  }
+  .opportunity-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .seller-example-grid,
+  .developer-grid,
+  .launch-grid {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .visual-hero > .section-inner {
+    grid-template-columns: 0.85fr 1.55fr;
+    column-gap: 3rem;
+    row-gap: 1.75rem;
+    align-items: center;
+  }
+  .hero-intro {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .hero-paths {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: 1fr;
+  }
+  .market-map {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  .hero-intro h1 {
+    font-size: 4.25rem;
+  }
+}
+@media (max-width: 639px) {
+  .visual-hero {
+    padding-top: 7.5rem;
+  }
+  .journey-stages {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .journey-stage {
+    display: grid;
+    grid-template-columns: 1.25rem 3.75rem 1fr;
+    grid-template-rows: auto auto;
+    text-align: left;
+    padding: 0.75rem;
+    column-gap: 1rem;
+    row-gap: 0;
+  }
+  .stage-number {
+    grid-row: 1 / span 2;
+  }
+  .stage-art {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    width: 3.75rem;
+    height: 3.75rem;
+    margin: 0;
+  }
+  .stage-art svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .journey-stage strong {
+    grid-column: 3;
+    align-self: end;
+  }
+  .stage-owner {
+    grid-column: 3;
+    align-self: start;
+  }
+  .stage-arrow {
+    transform: rotate(90deg);
+    top: auto;
+    bottom: -1.1rem;
+    right: 1rem;
+  }
+  .journey-detail {
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 379px) {
+  .hero-intro h1 {
+    font-size: 2.75rem;
+  }
+}
