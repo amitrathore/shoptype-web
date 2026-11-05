@@ -25,7 +25,10 @@ const groups = [
   {
     title: "Ecosystem",
     links: [
-      ["Agents of Mind", "https://www.agentsofmind.com"],
+      ["Opentangle", "https://opentangle.ai"],
+      ["Daemons", "https://daemons.ai/"],
+      ["Toolisman", "https://toolisman.com/"],
+      ["AwakeVC", "https://awake.vc/"],
       ["Yvatar", "https://yvatar.com"],
       ["Coselling.ai", "https://coselling.ai"],
       ["Commerce of Agents", "https://www.commerceofagents.com"],
