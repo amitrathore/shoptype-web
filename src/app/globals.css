@@ -63,7 +63,9 @@ body {
   background: var(--canvas);
   color: var(--cream);
   position: relative;
-  transition: background-color 0.25s ease, color 0.25s ease;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
 }
 
 ::selection {
@@ -183,4 +185,62 @@ body::before {
 
 [data-theme="light"] .theme-icon-light {
   display: block;
+}
+
+@layer components {
+  .section-shell {
+    @apply border-t border-line py-20 md:py-28;
+  }
+  .section-inner {
+    @apply mx-auto max-w-7xl px-6 md:px-10;
+  }
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-wider text-lime;
+  }
+  .section-title {
+    @apply mt-5 max-w-3xl font-display text-4xl leading-[1.1] tracking-tight md:text-5xl;
+  }
+  .section-copy {
+    @apply mt-6 max-w-3xl text-lg leading-relaxed text-cream-dim;
+  }
+  .button-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 font-mono font-medium text-ink transition-transform hover:scale-[1.02];
+  }
+  .text-link {
+    @apply underline decoration-line underline-offset-4 transition-colors hover:text-lime;
+  }
+}
+
+section[id],
+main[id] {
+  scroll-margin-top: 6rem;
+}
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 5px;
+}
+.skip-link {
+  position: fixed;
+  top: -5rem;
+  left: 1rem;
+  z-index: 100;
+  background: var(--canvas);
+  color: var(--cream);
+  padding: 1rem;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
