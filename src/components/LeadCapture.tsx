@@ -3,9 +3,9 @@ import Script from "next/script";
 const tallyFormId = "dW1bXD";
 
 const qualifiers = [
-  "Your industry vertical and current audience",
-  "The sellers, creators, or partners you can recruit",
-  "Whether you need marketplace launch, agentic distribution, or both",
+  "The community, industry, or niche you want to serve",
+  "The products, services, and sellers you want to bring together",
+  "Your starting point: an audience, a business, or a new idea",
   "Timeline, budget range, and best next conversation",
 ];
 
@@ -25,19 +25,25 @@ export default function LeadCapture() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 px-6 md:grid-cols-[0.9fr_1.1fr] md:px-10 md:items-start">
         <div>
           <p className="font-mono text-[11px] uppercase tracking-wider text-cream-dim">
-            Build your market ecosystem
+            Launch an agentic market
           </p>
           <h2 className="mt-5 font-display text-4xl leading-[1.05] tracking-tight text-cream md:text-6xl">
-            You bring the industry vertical.
+            You know the opportunity.
             <br />
             <span className="text-lime text-glow-lime">
-              Shoptype brings the agentic market ecosystem.
+              Build your market with us.
             </span>
           </h2>
           <p className="mt-7 max-w-xl font-body text-base leading-relaxed text-cream-dim md:text-lg">
-            Tell us what market you want to platformize. The strongest fit is
-            a business, creator, community, or media property that can assemble
-            sellers and partners around a specific category.
+            Bring your expertise, audience, or industry relationships. You don’t
+            have to build every product to build a valuable business around
+            them. Tell us who your market will serve and what you want to offer.
+            We’ll work through the launch with you.
+          </p>
+
+          <p className="mt-5 text-sm leading-relaxed text-cream-dim">
+            Launch with our team. This is a guided application, rather than
+            instant self-service market creation.
           </p>
 
           <div className="mt-10 border-y border-line">

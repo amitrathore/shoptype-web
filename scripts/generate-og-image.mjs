@@ -98,35 +98,35 @@ const markup = e(
         position: "absolute",
         top: 192,
         left: 64,
-        width: 760,
+        width: 1060,
       },
     },
     e(
       "div",
       {
         style: {
-          fontSize: 70,
+          fontSize: 64,
           fontWeight: 700,
           lineHeight: 0.98,
           color: "#f4eee2",
           letterSpacing: -3.2,
         },
       },
-      "Market Ecosystems"
+      "Your products and services."
     ),
     e(
       "div",
       {
         style: {
           marginTop: 10,
-          fontSize: 58,
+          fontSize: 57,
           fontWeight: 700,
           lineHeight: 1,
           color: "#ffd700",
           letterSpacing: -2.6,
         },
       },
-      "for the Age of Agents."
+      "More markets. Ready for agents."
     ),
     e(
       "div",
@@ -139,7 +139,7 @@ const markup = e(
           maxWidth: 640,
         },
       },
-      "Turn your business into the platform for your industry — where human cosellers and AI agents find buyers and drive sales."
+      "Connect your business. Connect your market. Or launch an agentic market with Shoptype."
     )
   ),
   e(
@@ -167,7 +167,7 @@ const markup = e(
 
 const response = new ImageResponse(markup, { width: 1200, height: 630 });
 const buffer = Buffer.from(await response.arrayBuffer());
-const outPath = join(publicDir, "og-image-v2.png");
+const outPath = join(publicDir, "og-agentic-commerce-v3.png");
 writeFileSync(outPath, buffer);
 console.log(`Wrote ${outPath} (${buffer.length} bytes)`);
 

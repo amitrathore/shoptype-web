@@ -1,122 +1,120 @@
-function NetworkDiagram() {
-  return (
-    <svg
-      viewBox="0 0 440 440"
-      className="w-full max-w-[440px] text-cream-dim"
-      fill="none"
-    >
-      {/* connecting lines */}
-      <g stroke="currentColor" strokeOpacity="0.25" strokeWidth="1">
-        <line x1="220" y1="220" x2="80" y2="90" />
-        <line x1="220" y1="220" x2="360" y2="90" />
-        <line x1="220" y1="220" x2="80" y2="350" />
-        <line x1="220" y1="220" x2="360" y2="350" />
-        <line x1="220" y1="220" x2="220" y2="40" />
-      </g>
-      {/* animated pulse traveling lines */}
-      <g stroke="var(--lime)" strokeWidth="2" strokeLinecap="round">
-        <line x1="220" y1="220" x2="80" y2="90" strokeDasharray="6 220">
-          <animate
-            attributeName="stroke-dashoffset"
-            from="226"
-            to="0"
-            dur="2.4s"
-            repeatCount="indefinite"
-          />
-        </line>
-        <line x1="220" y1="220" x2="360" y2="350" strokeDasharray="6 220">
-          <animate
-            attributeName="stroke-dashoffset"
-            from="226"
-            to="0"
-            dur="3.1s"
-            repeatCount="indefinite"
-          />
-        </line>
-      </g>
-
-      {/* center node: business */}
-      <circle cx="220" cy="220" r="34" fill="var(--canvas)" stroke="var(--lime)" strokeWidth="1.5" />
-      <text x="220" y="216" textAnchor="middle" fontSize="9" fontFamily="var(--font-mono)" fill="var(--lime)">YOUR</text>
-      <text x="220" y="228" textAnchor="middle" fontSize="9" fontFamily="var(--font-mono)" fill="var(--lime)">BUSINESS</text>
-
-      {/* coseller node */}
-      <circle cx="80" cy="90" r="20" fill="var(--canvas)" stroke="currentColor" strokeWidth="1.2" />
-      <text x="80" y="93" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--cream)">COSELLER</text>
-
-      <circle cx="360" cy="90" r="20" fill="var(--canvas)" stroke="currentColor" strokeWidth="1.2" />
-      <text x="360" y="93" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--cream)">SELLER</text>
-
-      {/* buyer node */}
-      <circle cx="80" cy="350" r="20" fill="var(--canvas)" stroke="var(--coral)" strokeWidth="1.2" />
-      <text x="80" y="353" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--coral)">BUYER</text>
-
-      {/* AI agent node */}
-      <circle cx="360" cy="350" r="20" fill="var(--canvas)" stroke="var(--violet)" strokeWidth="1.2" />
-      <text x="360" y="353" textAnchor="middle" fontSize="8" fontFamily="var(--font-mono)" fill="var(--violet)">AGENT</text>
-
-      {/* referrer node */}
-      <circle cx="220" cy="40" r="18" fill="var(--canvas)" stroke="currentColor" strokeWidth="1.2" />
-      <text x="220" y="43" textAnchor="middle" fontSize="7.5" fontFamily="var(--font-mono)" fill="var(--cream)">REFERRER</text>
-    </svg>
-  );
-}
+const paths = [
+  {
+    title: "Connect your business",
+    href: "#sellers",
+    description:
+      "Offer your products or services through participating markets.",
+    label: "For sellers",
+  },
+  {
+    title: "Connect your market",
+    href: "#markets",
+    description:
+      "Bring Shoptype’s seller integrations into your existing market.",
+    label: "For market operators",
+  },
+  {
+    title: "Launch an agentic market",
+    href: "#launch",
+    description: "Build a market around your community, industry, or niche.",
+    label: "Launch with our team",
+  },
+];
 
 export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden pt-36 pb-24 md:pt-44 md:pb-32"
+      className="relative overflow-hidden pb-20 pt-32 md:pb-28 md:pt-44"
     >
-      <div className="bg-grid bg-grid-drift absolute inset-0 -z-10 opacity-[0.35]" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-canvas via-canvas/95 to-canvas" />
-      <div className="absolute -top-40 right-0 -z-10 h-[520px] w-[520px] rounded-full bg-lime/10 blur-[140px]" />
-
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-6 md:grid-cols-[1.15fr_0.85fr] md:px-10 md:items-center">
-        <div className="animate-rise">
-          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-line px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-wider text-cream-dim">
-            <span className="h-1.5 w-1.5 rounded-full bg-lime" />
-            The growth and distribution layer for any business
-          </div>
-
-          <h1 className="font-display text-[13vw] leading-[0.98] tracking-tight text-cream md:text-[clamp(2.6rem,5.4vw,5.2rem)]">
-            Market Ecosystems
-            <br />
-            <span className="text-glow-lime text-lime">for the Age of Agents</span>
-            <span className="text-cream-dim">.</span>
-          </h1>
-
-          <p className="mt-7 max-w-xl font-body text-lg leading-relaxed text-cream-dim md:text-xl">
-            <strong className="font-semibold text-cream">Shoptype</strong>{" "}
-            turns your business into a living market ecosystem — a network of
-            human cosellers and AI agents that find buyers, share content,
-            recommend products, and drive sales on your behalf. Agentic
-            markets are the infrastructure underneath: they handle the
-            transacting and plug you into the agentic economy, while
-            full-funnel growth and distribution is what actually scales you.
-          </p>
-
-          <div className="mt-10 flex flex-wrap items-center gap-5">
-            <a
-              href="#launch"
-              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-accent px-7 py-3.5 font-mono text-[13px] font-medium uppercase tracking-wider text-ink transition-transform hover:scale-[1.03]"
-            >
-              Build your market ecosystem
-              <span aria-hidden className="transition-transform group-hover:translate-x-1">
-                &rarr;
+      <div className="bg-grid bg-grid-drift absolute inset-0 -z-10 opacity-30" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-canvas via-canvas/90 to-canvas" />
+      <div className="mx-auto max-w-7xl px-6 md:px-10">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.4fr_0.8fr]">
+          <div className="animate-rise">
+            <p className="eyebrow">Commerce for the age of agents</p>
+            <h1 className="mt-6 font-display text-[clamp(2.8rem,7vw,5.5rem)] leading-[1.04] tracking-tight">
+              Your products
+              <br />
+              and services.
+              <br />
+              <span className="text-lime">
+                More markets.
+                <br />
+                Ready for agents.
               </span>
-            </a>
-            <a
-              href="#agentic"
-              className="font-mono text-[13px] uppercase tracking-wider text-cream-dim underline decoration-line decoration-1 underline-offset-4 transition-colors hover:text-cream hover:decoration-lime"
-            >
-              See how the ecosystem grows
-            </a>
+            </h1>
+            <p className="mt-7 max-w-xl text-lg leading-relaxed text-cream-dim md:text-xl">
+              Shoptype connects sellers to markets where humans and AI agents
+              discover and buy. Bring your products or services, connect
+              payments and delivery, and manage your market integrations in one
+              place.
+            </p>
+            <p className="mt-4 max-w-xl leading-relaxed text-cream-dim">
+              Building a market? Onboard sellers and connect their offerings to
+              your commerce experience.
+            </p>
           </div>
-        </div>
-
-        <div className="relative flex justify-center md:justify-end">
-          <NetworkDiagram />
+          <div className="grid gap-4 md:grid-cols-3 lg:order-3 lg:col-span-2">
+            {paths.map((path) => (
+              <a
+                key={path.href}
+                href={path.href}
+                className="group rounded-2xl border border-line bg-canvas p-6 transition-colors hover:border-lime"
+              >
+                <p className="eyebrow">{path.label}</p>
+                <h2 className="mt-4 font-display text-2xl">
+                  {path.title}{" "}
+                  <span className="text-lime" aria-hidden="true">
+                    ↗
+                  </span>
+                </h2>
+                <p className="mt-3 text-sm leading-relaxed text-cream-dim">
+                  {path.description}
+                </p>
+              </a>
+            ))}
+          </div>
+          <div
+            className="lg:order-2 rounded-3xl border border-line bg-canvas-raised/60 p-6 md:p-8"
+            aria-label="Shoptype connects product and service APIs to participating markets for human and AI buyers"
+          >
+            <p className="eyebrow">One connection. New possibilities.</p>
+            <div className="mt-7 rounded-xl border border-line bg-canvas p-5">
+              <p className="font-display text-2xl">Products &amp; services</p>
+              <p className="mt-2 text-sm text-cream-dim">
+                Your offering. Your product systems.
+              </p>
+            </div>
+            <div
+              className="py-3 text-center text-xl text-lime"
+              aria-hidden="true"
+            >
+              ↓
+            </div>
+            <div className="rounded-xl border border-lime/50 bg-canvas p-5">
+              <p className="font-display text-2xl text-lime">Shoptype Bridge</p>
+              <p className="mt-2 text-sm text-cream-dim">
+                Catalog · Payments · Delivery
+              </p>
+            </div>
+            <div
+              className="py-3 text-center text-xl text-lime"
+              aria-hidden="true"
+            >
+              ↓
+            </div>
+            <div className="rounded-xl border border-line bg-canvas p-5">
+              <p className="font-display text-2xl">Participating markets</p>
+              <p className="mt-2 text-sm text-cream-dim">
+                New audiences. Human and AI buyers.
+              </p>
+            </div>
+            <p className="mt-5 text-xs leading-relaxed text-cream-dim">
+              Each market integration is configured, tested, and activated
+              before going live.
+            </p>
+          </div>
         </div>
       </div>
     </section>
