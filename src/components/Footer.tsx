@@ -27,6 +27,7 @@ const groups = [
     links: [
       ["Agents of Mind", "https://www.agentsofmind.com"],
       ["Yvatar", "https://yvatar.com"],
+      ["Coselling.ai", "https://coselling.ai"],
       ["Commerce of Agents", "https://www.commerceofagents.com"],
     ],
   },
